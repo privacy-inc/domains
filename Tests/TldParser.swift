@@ -7,6 +7,7 @@ enum TldParser {
         } (content
             .lines
             .reduce(into: (set: Set<String>(), dictionary: [String : Any]())) { result, components in
+            print(components)
                 components
                     .filter {
                         $0 != "*"
@@ -26,10 +27,11 @@ enum TldParser {
                             .set
                             .insert($0)
                     }
-                
+            print("set \(result.set)")
                 result
                     .dictionary
                     .chain(components: components)
+            print("dict \(result.dictionary)")
             })
     }
 }
@@ -149,12 +151,13 @@ extension Tld {
                                 : (self[key]
                                     .flatMap {
                                         $0 as? Self
-                                    })
+                                    } ?? .init())
                                     .map {
                                         var previous = $0
                                         previous.chain(components: .init(remain))
-                                        return previous
+                                        return previous as Any
                                     }
+                                    ?? self[key]
                             }
                         } (remain.last!)
                 } (components.dropLast())
