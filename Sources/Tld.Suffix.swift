@@ -14,6 +14,7 @@ extension Tld {
         .abudhabi : .end,
         .ac : .previous([
             .com : .end,
+            .drr : .end,
             .edu : .end,
             .gov : .end,
             .mil : .end,
@@ -38,7 +39,6 @@ extension Tld {
             .gov : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .sch : .end]),
         .aeg : .end,
@@ -135,7 +135,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .afamilycompany : .end,
         .afl : .end,
@@ -151,7 +150,6 @@ extension Tld {
         .ai : .previous([
             .com : .end,
             .net : .end,
-            .nom : .end,
             .off : .end,
             .org : .end,
             .uwu : .end]),
@@ -167,7 +165,6 @@ extension Tld {
             .gov : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .alfaromeo : .end,
         .alibaba : .end,
@@ -209,6 +206,8 @@ extension Tld {
         .apartments : .end,
         .app : .previous([
             .bookonline : .end,
+            .clerk : .end,
+            .clerkstage : .end,
             .developer : .wildcard(.init([
 ])),
             .edgecompute : .end,
@@ -232,16 +231,20 @@ extension Tld {
         .aq : .end,
         .aquarelle : .end,
         .ar : .previous([
+            .bet : .end,
             .com : .previous([
                 .blogspot : .end]),
+            .coop : .end,
             .edu : .end,
             .gob : .end,
             .gov : .end,
             .int : .end,
             .mil : .end,
             .musica : .end,
+            .mutual : .end,
             .net : .end,
             .org : .end,
+            .senasa : .end,
             .tur : .end]),
         .arab : .end,
         .aramco : .end,
@@ -283,6 +286,7 @@ extension Tld {
             .gv : .end,
             .info : .end,
             .lima_city : .end,
+            .myspreadshop : .end,
             .or : .end,
             .ortsinfo : .previous([
                 .ex : .wildcard(.init([
@@ -298,7 +302,8 @@ extension Tld {
             .com : .previous([
                 .blogspot : .end,
                 .cloudlets : .previous([
-                    .mel : .end])]),
+                    .mel : .end]),
+                .myspreadshop : .end]),
             .conf : .end,
             .edu : .previous([
                 .act : .end,
@@ -372,7 +377,8 @@ extension Tld {
             .gov : .end,
             .mil : .end,
             .net : .end,
-            .org : .end]),
+            .org : .end,
+            .rs : .end]),
         .baby : .end,
         .baidu : .end,
         .banamex : .end,
@@ -416,6 +422,7 @@ extension Tld {
                 .cloud : .end]),
             .kuleuven : .previous([
                 .ezproxy : .end]),
+            .myspreadshop : .end,
             .transurl : .wildcard(.init([
 ])),
             .webhosting : .end]),
@@ -825,7 +832,6 @@ extension Tld {
             .mediatech : .end,
             .mil : .end,
             .mycloud : .end,
-            .nym : .end,
             .of : .end]),
         .bz : .previous([
             .com : .end,
@@ -833,8 +839,6 @@ extension Tld {
             .gov : .end,
             .gsj : .end,
             .net : .end,
-            .nom : .end,
-            .nym : .end,
             .org : .end,
             .za : .end]),
         .bzh : .end,
@@ -848,6 +852,7 @@ extension Tld {
             .co : .end,
             .gc : .end,
             .mb : .end,
+            .myspreadshop : .end,
             .nb : .end,
             .nf : .end,
             .nl : .end,
@@ -901,6 +906,8 @@ extension Tld {
             .game_server : .end,
             .myphotos : .end,
             .scrapping : .end,
+            .spawn : .previous([
+                .instances : .end]),
             .twmail : .end]),
         .cd : .previous([
             .gov : .end]),
@@ -928,6 +935,7 @@ extension Tld {
             .gotdns : .end,
             .lima_city : .end,
             .linkyard_cloud : .end,
+            .myspreadshop : .end,
             .square7 : .end]),
         .chanel : .end,
         .channel : .end,
@@ -972,8 +980,7 @@ extension Tld {
             .co : .end,
             .gob : .end,
             .gov : .end,
-            .mil : .end,
-            .nom : .end]),
+            .mil : .end]),
         .claims : .end,
         .cleaning : .end,
         .click : .end,
@@ -986,6 +993,7 @@ extension Tld {
             .banzai : .wildcard(.init([
 ])),
             .diadem : .end,
+            .elementor : .end,
             .jelastic : .previous([
                 .vip : .end]),
             .jele : .end,
@@ -1116,6 +1124,7 @@ extension Tld {
             .rec : .end,
             .repl : .previous([
                 .id : .end]),
+            .supabase : .end,
             .web : .end]),
         .coach : .end,
         .codes : .previous([
@@ -1267,6 +1276,9 @@ extension Tld {
                 .ocs : .wildcard(.init([
 ]))]),
             .damnserver : .end,
+            .datadetect : .previous([
+                .demo : .end,
+                .instance : .end]),
             .dattolocal : .end,
             .dattorelay : .end,
             .dattoweb : .end,
@@ -1325,6 +1337,9 @@ extension Tld {
                 .us_gov_west_1 : .end,
                 .us_west_1 : .end,
                 .us_west_2 : .end]),
+            .elluciancrmadvance : .end,
+            .elluciancrmadvise : .end,
+            .elluciancrmrecruit : .end,
             .est_a_la_maison : .end,
             .est_a_la_masion : .end,
             .est_le_patron : .end,
@@ -1537,6 +1552,7 @@ extension Tld {
             .mysecuritycamera : .end,
             .myshopblocks : .end,
             .myshopify : .end,
+            .myspreadshop : .end,
             .mythic_beasts : .previous([
                 .caracal : .end,
                 .customer : .end,
@@ -1594,6 +1610,7 @@ extension Tld {
             .remotewd : .end,
             .render : .previous([
                 .app : .end]),
+            .reservd : .end,
             .reserve_online : .end,
             .rhcloud : .end,
             .ru : .end,
@@ -1636,6 +1653,7 @@ extension Tld {
             .townnews_staging : .end,
             .try_snowplow : .end,
             .trycloudflare : .end,
+            .tuleap_partners : .end,
             .uk : .end,
             .unusualperson : .end,
             .us : .end,
@@ -1668,6 +1686,7 @@ extension Tld {
         .commbank : .end,
         .community : .previous([
             .myforum : .end,
+            .nog : .end,
             .ravendb : .end]),
         .company : .end,
         .compare : .end,
@@ -1681,7 +1700,8 @@ extension Tld {
         .cooking : .end,
         .cookingchannel : .end,
         .cool : .previous([
-            .de : .end]),
+            .de : .end,
+            .elementor : .end]),
         .coop : .end,
         .corsica : .end,
         .country : .end,
@@ -1803,6 +1823,9 @@ extension Tld {
             .günstigliefern : .end,
             .home_webserver : .previous([
                 .dyn : .end]),
+            .hs_heilbronn : .previous([
+                .it : .previous([
+                    .pages : .end])]),
             .in_berlin : .end,
             .in_brb : .end,
             .in_butter : .end,
@@ -1825,6 +1848,7 @@ extension Tld {
             .my_vigor : .end,
             .my_wan : .end,
             .myhome_server : .end,
+            .myspreadshop : .end,
             .schulserver : .end,
             .spdns : .end,
             .speedpartner : .previous([
@@ -1899,6 +1923,7 @@ extension Tld {
             .blogspot : .end,
             .co : .end,
             .firm : .end,
+            .myspreadshop : .end,
             .reg : .end,
             .store : .end]),
         .dm : .previous([
@@ -1961,7 +1986,6 @@ extension Tld {
             .med : .end,
             .mil : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .pro : .end]),
         .eco : .end,
@@ -2011,6 +2035,7 @@ extension Tld {
                 .blogspot : .end]),
             .edu : .end,
             .gob : .end,
+            .myspreadshop : .end,
             .nom : .end,
             .org : .end]),
         .esq : .end,
@@ -2077,7 +2102,8 @@ extension Tld {
                 .paas : .end]),
             .dy : .end,
             .häkkinen : .end,
-            .iki : .end]),
+            .iki : .end,
+            .myspreadshop : .end]),
         .fiat : .end,
         .fidelity : .end,
         .fido : .end,
@@ -2152,6 +2178,7 @@ extension Tld {
             .greta : .end,
             .huissier_justice : .end,
             .medecin : .end,
+            .myspreadshop : .end,
             .nom : .end,
             .notaires : .end,
             .on_web : .end,
@@ -2159,7 +2186,8 @@ extension Tld {
             .port : .end,
             .prd : .end,
             .tm : .end,
-            .veterinaire : .end]),
+            .veterinaire : .end,
+            .ynh : .end]),
         .free : .end,
         .fresenius : .end,
         .frl : .end,
@@ -2187,8 +2215,7 @@ extension Tld {
         .gbiz : .end,
         .gd : .previous([
             .edu : .end,
-            .gov : .end,
-            .nom : .end]),
+            .gov : .end]),
         .gdn : .previous([
             .cnpy : .end]),
         .ge : .previous([
@@ -2197,7 +2224,6 @@ extension Tld {
             .gov : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .pvt : .end]),
         .gea : .end,
@@ -2237,7 +2263,6 @@ extension Tld {
             .com : .end,
             .edu : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .xx : .end]),
         .glade : .end,
@@ -2285,7 +2310,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .net : .end,
-            .nym : .end,
             .org : .end]),
         .grainger : .end,
         .graphics : .end,
@@ -2305,7 +2329,6 @@ extension Tld {
             .ind : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .to : .end]),
         .gu : .previous([
@@ -2331,7 +2354,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .net : .end,
-            .nym : .end,
             .org : .end]),
         .hair : .end,
         .hamburg : .end,
@@ -2361,7 +2383,6 @@ extension Tld {
             .inc : .end,
             .ltd : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .secaas : .end,
             .个人 : .end,
@@ -2388,7 +2409,6 @@ extension Tld {
             .gob : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .hockey : .end,
         .holdings : .end,
@@ -2496,7 +2516,9 @@ extension Tld {
             .forte : .end,
             .go : .end,
             .mil : .end,
-            .my : .end,
+            .my : .previous([
+                .rss : .wildcard(.init([
+]))]),
             .net : .end,
             .or : .end,
             .ponpes : .end,
@@ -2506,7 +2528,7 @@ extension Tld {
         .ie : .previous([
             .blogspot : .end,
             .gov : .end,
-            .nym : .end]),
+            .myspreadshop : .end]),
         .ieee : .end,
         .ifm : .end,
         .ikano : .end,
@@ -2514,7 +2536,8 @@ extension Tld {
             .ac : .end,
             .co : .previous([
                 .blogspot : .end,
-                .ravpage : .end]),
+                .ravpage : .end,
+                .tabitorder : .end]),
             .gov : .end,
             .idf : .end,
             .k12 : .end,
@@ -2528,7 +2551,6 @@ extension Tld {
                 .plc : .end]),
             .com : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .ro : .end,
             .tt : .end,
@@ -2553,6 +2575,7 @@ extension Tld {
             .nic : .end,
             .org : .end,
             .res : .end,
+            .supabase : .end,
             .web : .end]),
         .inc : .end,
         .industries : .end,
@@ -2608,6 +2631,7 @@ extension Tld {
                 .sekd1 : .end]),
             .bigv : .previous([
                 .uk0 : .end]),
+            .bitbucket : .end,
             .bluebite : .end,
             .boxfuse : .end,
             .browsersafetymark : .end,
@@ -2620,8 +2644,6 @@ extension Tld {
             .drud : .end,
             .dyn53 : .end,
             .editorx : .end,
-            .enonic : .previous([
-                .customer : .end]),
             .fh_muenster : .end,
             .forgerock : .previous([
                 .id : .end]),
@@ -2672,13 +2694,16 @@ extension Tld {
             .telebit : .end,
             .thingdust : .previous([
                 .dev : .previous([
-                    .cust : .end]),
+                    .cust : .end,
+                    .reservd : .end]),
                 .disrec : .previous([
-                    .cust : .end]),
+                    .cust : .end,
+                    .reservd : .end]),
                 .prod : .previous([
                     .cust : .end]),
                 .testing : .previous([
-                    .cust : .end])]),
+                    .cust : .end,
+                    .reservd : .end])]),
             .unispace : .previous([
                 .cloud_fr1 : .end]),
             .utwente : .end,
@@ -2932,6 +2957,7 @@ extension Tld {
             .monzaedellabrianza : .end,
             .ms : .end,
             .mt : .end,
+            .myspreadshop : .end,
             .na : .end,
             .naples : .end,
             .napoli : .end,
@@ -4980,7 +5006,6 @@ extension Tld {
             .me : .end,
             .mobi : .end,
             .ne : .end,
-            .nom : .end,
             .or : .end,
             .sc : .end]),
         .kerryhotels : .end,
@@ -5011,6 +5036,7 @@ extension Tld {
             .net : .end,
             .org : .end]),
         .kia : .end,
+        .kids : .end,
         .kim : .end,
         .kinder : .end,
         .kindle : .end,
@@ -5111,7 +5137,6 @@ extension Tld {
                 .upaas : .end]),
             .mil : .end,
             .net : .end,
-            .nym : .end,
             .org : .end]),
         .la : .previous([
             .bnr : .end,
@@ -5122,7 +5147,6 @@ extension Tld {
             .info : .end,
             .int : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .per : .end]),
         .lacaixa : .end,
@@ -5154,7 +5178,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .oy : .end]),
         .lds : .end,
@@ -5167,9 +5190,7 @@ extension Tld {
         .lgbt : .end,
         .li : .previous([
             .blogspot : .end,
-            .caa : .end,
-            .nom : .end,
-            .nym : .end]),
+            .caa : .end]),
         .lidl : .end,
         .life : .end,
         .lifeinsurance : .end,
@@ -5187,7 +5208,8 @@ extension Tld {
 ])),
             .mypep : .end]),
         .lipsy : .end,
-        .live : .end,
+        .live : .previous([
+            .hlx : .end]),
         .living : .end,
         .lixil : .end,
         .lk : .previous([
@@ -5242,13 +5264,11 @@ extension Tld {
             .sc : .end]),
         .lt : .previous([
             .blogspot : .end,
-            .gov : .end,
-            .nym : .end]),
+            .gov : .end]),
         .ltd : .end,
         .ltda : .end,
         .lu : .previous([
-            .blogspot : .end,
-            .nym : .end]),
+            .blogspot : .end]),
         .lundbeck : .end,
         .luxe : .end,
         .luxury : .end,
@@ -5261,7 +5281,6 @@ extension Tld {
             .id : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .ly : .previous([
             .com : .end,
@@ -5342,11 +5361,9 @@ extension Tld {
             .mcdir : .end,
             .mcpe : .end,
             .myds : .end,
-            .nctu : .end,
             .net : .end,
             .nohost : .end,
             .noip : .end,
-            .nym : .end,
             .org : .end,
             .priv : .end,
             .ravendb : .end,
@@ -5355,6 +5372,7 @@ extension Tld {
             .tbits : .end,
             .tcp4 : .end,
             .ukco : .end,
+            .vp4 : .end,
             .wbq : .end,
             .webhop : .end,
             .wedeploy : .end,
@@ -5397,7 +5415,6 @@ extension Tld {
             .inf : .end,
             .name : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .ml : .previous([
             .com : .end,
@@ -5416,7 +5433,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .nyc : .end,
-            .nym : .end,
             .org : .end]),
         .mo : .previous([
             .com : .end,
@@ -5444,7 +5460,8 @@ extension Tld {
         .motorcycles : .end,
         .mov : .end,
         .movie : .end,
-        .mp : .end,
+        .mp : .previous([
+            .ju : .end]),
         .mq : .end,
         .mr : .previous([
             .blogspot : .end,
@@ -6056,7 +6073,6 @@ extension Tld {
             .edu : .end,
             .gob : .end,
             .net : .end,
-            .nym : .end,
             .org : .end]),
         .my : .previous([
             .biz : .end,
@@ -6115,6 +6131,9 @@ extension Tld {
             .alwaysdata : .end,
             .appudo : .end,
             .at_band_camp : .end,
+            .atlassian_dev : .previous([
+                .prod : .previous([
+                    .cdn : .end])]),
             .azure_mobile : .end,
             .azurestaticapps : .previous([
                 .centralus : .end,
@@ -6239,6 +6258,7 @@ extension Tld {
             .mymediapc : .end,
             .mypsx : .end,
             .mysecuritycamera : .end,
+            .myspreadshop : .end,
             .nhlfan : .end,
             .no_ip : .end,
             .now_dns : .end,
@@ -6279,6 +6299,7 @@ extension Tld {
                 .soc : .end,
                 .user : .end]),
             .static_access : .end,
+            .supabase : .end,
             .sytes : .end,
             .t3l3p0rt : .end,
             .thruhere : .end,
@@ -6376,6 +6397,7 @@ extension Tld {
             .demon : .end,
             .hosting_cluster : .end,
             .khplay : .end,
+            .myspreadshop : .end,
             .transurl : .wildcard(.init([
 ])),
             .virtueeldomein : .end]),
@@ -6788,6 +6810,7 @@ extension Tld {
             .muosat : .end,
             .muosát : .end,
             .museum : .end,
+            .myspreadshop : .end,
             .málatvuopmi : .end,
             .mátta_várjjat : .end,
             .målselv : .end,
@@ -7169,9 +7192,7 @@ extension Tld {
             .enterprisecloud : .end,
             .merseine : .end,
             .mine : .end,
-            .nom : .end,
-            .shacknet : .end,
-            .uwu : .end]),
+            .shacknet : .end]),
         .nyc : .end,
         .nz : .previous([
             .ac : .end,
@@ -7188,7 +7209,6 @@ extension Tld {
             .mil : .end,
             .māori : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .parliament : .end,
             .school : .end]),
@@ -7223,7 +7243,9 @@ extension Tld {
         .onion : .end,
         .onl : .end,
         .online : .previous([
-            .barsy : .end]),
+            .barsy : .end,
+            .eero : .end,
+            .eero_stage : .end]),
         .ooo : .end,
         .open : .end,
         .oracle : .end,
@@ -7431,6 +7453,8 @@ extension Tld {
             .org : .end,
             .sld : .end]),
         .page : .previous([
+            .hlx : .end,
+            .hlx3 : .end,
             .magnet : .end,
             .pdns : .end,
             .plesk : .end,
@@ -7453,7 +7477,6 @@ extension Tld {
             .mil : .end,
             .net : .end,
             .nom : .end,
-            .nym : .end,
             .org : .end]),
         .pet : .end,
         .pf : .previous([
@@ -7530,6 +7553,7 @@ extension Tld {
             .czeladz : .end,
             .czest : .end,
             .dlugoleka : .end,
+            .ecommerce_shop : .end,
             .edu : .end,
             .elblag : .end,
             .elk : .end,
@@ -7591,6 +7615,7 @@ extension Tld {
                 .zp : .end]),
             .grajewo : .end,
             .gsm : .end,
+            .homesklep : .end,
             .ilawa : .end,
             .info : .end,
             .jaworzno : .end,
@@ -7636,6 +7661,7 @@ extension Tld {
             .mielno : .end,
             .mil : .end,
             .mragowo : .end,
+            .myspreadshop : .end,
             .naklo : .end,
             .net : .end,
             .nieruchomosci : .end,
@@ -7809,7 +7835,6 @@ extension Tld {
             .int : .end,
             .net : .end,
             .nome : .end,
-            .nym : .end,
             .org : .end,
             .publ : .end]),
         .pub : .previous([
@@ -7821,7 +7846,6 @@ extension Tld {
             .ed : .end,
             .go : .end,
             .ne : .end,
-            .nom : .end,
             .or : .end,
             .x443 : .end]),
         .pwc : .end,
@@ -7841,7 +7865,6 @@ extension Tld {
             .mil : .end,
             .name : .end,
             .net : .end,
-            .nom : .end,
             .org : .end,
             .sch : .end]),
         .qpon : .end,
@@ -7891,6 +7914,7 @@ extension Tld {
         .rmit : .end,
         .ro : .previous([
             .arts : .end,
+            .barsy : .end,
             .blogspot : .end,
             .co : .end,
             .com : .end,
@@ -7898,7 +7922,6 @@ extension Tld {
             .info : .end,
             .nom : .end,
             .nt : .end,
-            .nym : .end,
             .org : .end,
             .rec : .end,
             .shop : .end,
@@ -7922,7 +7945,6 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             ._in : .end,
-            .nom : .end,
             .org : .end,
             .ox : .end,
             .ua : .end]),
@@ -7986,7 +8008,8 @@ extension Tld {
             .development : .end,
             .hs : .end,
             .ravendb : .end,
-            .repl : .end]),
+            .repl : .end,
+            .servers : .end]),
         .rw : .previous([
             .ac : .end,
             .co : .end,
@@ -8081,6 +8104,7 @@ extension Tld {
             .h : .end,
             .i : .end,
             .iopsys : .end,
+            .itcouldbewor : .end,
             .k : .end,
             .komforb : .end,
             .kommunalforbund : .end,
@@ -8088,11 +8112,14 @@ extension Tld {
             .l : .end,
             .lanbib : .end,
             .m : .end,
+            .myspreadshop : .end,
             .n : .end,
             .naturbruksgymn : .end,
             .o : .end,
             .org : .end,
             .p : .end,
+            .paba : .previous([
+                .su : .end]),
             .parti : .end,
             .pp : .end,
             .press : .end,
@@ -8161,15 +8188,15 @@ extension Tld {
         .si : .previous([
             .blogspot : .end,
             .gitapp : .end,
-            .gitpage : .end,
-            .nom : .end]),
+            .gitpage : .end]),
         .silk : .end,
         .sina : .end,
         .singles : .end,
         .site : .previous([
             .barsy : .end,
             .byen : .end,
-            .cloudera : .end,
+            .cloudera : .wildcard(.init([
+])),
             .cyon : .end,
             .fastvps : .end,
             .fnwk : .end,
@@ -8188,8 +8215,7 @@ extension Tld {
 ]))]),
         .sj : .end,
         .sk : .previous([
-            .blogspot : .end,
-            .nym : .end]),
+            .blogspot : .end]),
         .ski : .end,
         .skin : .end,
         .sky : .end,
@@ -8228,7 +8254,9 @@ extension Tld {
         .software : .end,
         .sohu : .end,
         .solar : .end,
-        .solutions : .end,
+        .solutions : .previous([
+            .diher : .wildcard(.init([
+]))]),
         .song : .end,
         .sony : .end,
         .soy : .end,
@@ -8259,7 +8287,6 @@ extension Tld {
             .mil : .end,
             .net : .end,
             .noho : .end,
-            .nom : .end,
             .org : .end,
             .principe : .end,
             .saotome : .end,
@@ -8274,6 +8301,7 @@ extension Tld {
         .stockholm : .end,
         .storage : .end,
         .store : .previous([
+            .sellfy : .end,
             .shopware : .end,
             .storebase : .end]),
         .stream : .end,
@@ -8318,7 +8346,6 @@ extension Tld {
             .navoi : .end,
             .north_kazakhstan : .end,
             .nov : .end,
-            .nym : .end,
             .obninsk : .end,
             .penza : .end,
             .pokrovsk : .end,
@@ -8352,8 +8379,7 @@ extension Tld {
         .swiftcover : .end,
         .swiss : .end,
         .sx : .previous([
-            .gov : .end,
-            .nym : .end]),
+            .gov : .end]),
         .sy : .previous([
             .com : .end,
             .edu : .end,
@@ -8431,7 +8457,6 @@ extension Tld {
             .name : .end,
             .net : .end,
             .nic : .end,
-            .nom : .end,
             .org : .end,
             .test : .end,
             .web : .end]),
@@ -8575,7 +8600,6 @@ extension Tld {
             .idv : .end,
             .mil : .end,
             .net : .end,
-            .nym : .end,
             .org : .end,
             .url : .end,
             .商業 : .end,
@@ -8687,7 +8711,6 @@ extension Tld {
             .com : .end,
             .go : .end,
             .ne : .end,
-            .nom : .end,
             .or : .end,
             .org : .end,
             .sc : .end]),
@@ -8705,6 +8728,7 @@ extension Tld {
                 .gwiddle : .end,
                 .layershift : .previous([
                     .j : .end]),
+                .myspreadshop : .end,
                 .nh_serv : .end,
                 .no_ip : .end,
                 .retrosnub : .previous([
@@ -8721,9 +8745,12 @@ extension Tld {
             .net : .end,
             .nhs : .end,
             .org : .previous([
+                .affinitylottery : .end,
                 .glug : .end,
                 .lug : .end,
-                .lugs : .end]),
+                .lugs : .end,
+                .raffleentry : .end,
+                .weeklylottery : .end]),
             .plc : .end,
             .police : .end,
             .pymnt : .end,
@@ -8986,7 +9013,6 @@ extension Tld {
             .gub : .end,
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .uz : .previous([
             .co : .end,
@@ -9006,10 +9032,10 @@ extension Tld {
                 .d : .end]),
             .mil : .end,
             .net : .end,
-            .nom : .end,
             .org : .end]),
         .ve : .previous([
             .arts : .end,
+            .bib : .end,
             .co : .end,
             .com : .end,
             .e12 : .end,
@@ -9021,7 +9047,9 @@ extension Tld {
             .int : .end,
             .mil : .end,
             .net : .end,
+            .nom : .end,
             .org : .end,
+            .rar : .end,
             .rec : .end,
             .store : .end,
             .tec : .end,
@@ -9034,8 +9062,7 @@ extension Tld {
         .versicherung : .end,
         .vet : .end,
         .vg : .previous([
-            .at : .end,
-            .nom : .end]),
+            .at : .end]),
         .vi : .previous([
             .co : .end,
             .com : .end,
