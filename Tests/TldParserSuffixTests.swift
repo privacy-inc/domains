@@ -6,7 +6,7 @@ final class TldParserSuffixTests: XCTestCase {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
 ]
 }
 
@@ -18,7 +18,7 @@ extension Tld {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         ._0 : .end,
         .com : .end,
         .net : .end,
@@ -52,7 +52,7 @@ com
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .com : .end,
         .org : .previous([
             ._0 : .end,
@@ -84,7 +84,7 @@ org
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .ck : .wildcard(.init([
 ]))]
 }
@@ -99,7 +99,7 @@ extension Tld {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .ck : .wildcard(.init([
             .www]))]
 }
@@ -114,7 +114,7 @@ extension Tld {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .ck : .wildcard(.init([
             .asd,
             .www]))]
@@ -132,7 +132,7 @@ extension Tld {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .ck : .wildcard(.init([
             ._0,
             .asd,

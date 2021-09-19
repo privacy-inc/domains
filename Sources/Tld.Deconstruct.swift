@@ -1,7 +1,7 @@
 import Foundation
 
 extension Tld {
-    static func deconstruct(url: String) -> (domain: String, suffix: String) {
+    public static func deconstruct(url: String) -> (domain: String, suffix: String) {
         url
             .components {
                 var components = $0

@@ -76,7 +76,7 @@ private extension Set where Element == String {
         """
 import Foundation
 
-enum Tld: String {
+public enum Tld: String {
     case
     \(sorted()
         .map(\.print)
@@ -111,7 +111,7 @@ private extension Dictionary where Key == String, Value == Any {
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
 \(listed(level: 1))]
 }
 
