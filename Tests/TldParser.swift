@@ -149,7 +149,7 @@ extension Tld {
                                 : (self[key]
                                     .flatMap {
                                         $0 as? Self
-                                    } ?? .init())
+                                    })
                                     .map {
                                         var previous = $0
                                         previous.chain(components: .init(remain))

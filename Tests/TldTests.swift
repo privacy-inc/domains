@@ -1,5 +1,5 @@
 import XCTest
-@testable import Sleuth
+@testable import Domains
 
 final class TldTests: XCTestCase {
     func testEmpty() {
