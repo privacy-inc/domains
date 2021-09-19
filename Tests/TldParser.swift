@@ -7,7 +7,6 @@ enum TldParser {
         } (content
             .lines
             .reduce(into: (set: Set<String>(), dictionary: [String : Any]())) { result, components in
-            print(components)
                 components
                     .filter {
                         $0 != "*"
@@ -27,11 +26,9 @@ enum TldParser {
                             .set
                             .insert($0)
                     }
-            print("set \(result.set)")
                 result
                     .dictionary
                     .chain(components: components)
-            print("dict \(result.dictionary)")
             })
     }
 }
