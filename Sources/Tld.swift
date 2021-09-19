@@ -1,6 +1,6 @@
 import Foundation
 
-enum Tld: String {
+public enum Tld: String {
     case
     _0 = "0",
     _001www = "001www",

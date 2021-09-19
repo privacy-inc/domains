@@ -1,7 +1,7 @@
 import Foundation
 
 extension Tld {
-    static let suffix: [Tld : Mode] = [
+    public static let suffix: [Tld : Mode] = [
         .aaa : .end,
         .aarp : .end,
         .abarth : .end,
