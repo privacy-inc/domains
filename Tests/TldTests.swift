@@ -6,6 +6,8 @@ final class TldTests: XCTestCase {
         let url = URL(string: "https://avocado.com:8080/some/else.xtr?something=done&another=true#total")!
         XCTAssertEqual("avocado.com", url.host)
         XCTAssertEqual("/some/else.xtr", url.path)
+        XCTAssertEqual(["some", "else.xtr"], url.path.components(separatedBy: "/").dropFirst())
+        XCTAssertEqual([], URL(string: "https://avocado.com")!.path.components(separatedBy: "/").dropFirst())
         XCTAssertEqual("total", url.fragment)
         XCTAssertEqual("something=done&another=true", url.query)
     }
