@@ -1,7 +1,7 @@
 import XCTest
 @testable import Domains
 
-final class TldTests: XCTestCase {
+final class DomainTests: XCTestCase {
     func testURLHost() {
         let url = URL(string: "https://avocado.com:8080/some/else.xtr?something=done&another=true#total")!
         XCTAssertEqual("avocado.com", url.host)

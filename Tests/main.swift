@@ -5,7 +5,7 @@ private let def = directory.appendingPathComponent("Sources/Tld.swift")
 private let suffix = directory.appendingPathComponent("Sources/Tld.Suffix.swift")
 private let dat = directory.appendingPathComponent("Resources/Tld.public_suffix_list.dat")
 
-let result = TldParser
+let result = Parser
     .parse(content: String(decoding: try! Data(contentsOf: dat), as: UTF8.self))
 try! Data(result
         .enum

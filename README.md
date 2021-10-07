@@ -5,5 +5,5 @@ TLD Parser
 ### Parsing
 On root directory run:
 ```bash
-cat Tests/TldParser.swift Tests/main.swift | swift -
+cat Tests/Parser.swift Tests/main.swift | swift -
 ```

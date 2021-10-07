@@ -1,6 +1,6 @@
 import XCTest
 
-final class TldParserEnumTests: XCTestCase {
+final class ParserEnumTests: XCTestCase {
     func testEmpty() {
         XCTAssertEqual("""
 import Foundation
@@ -11,7 +11,7 @@ public enum Tld: String {
 
 }
 
-""", TldParser.parse(content: "").enum)
+""", Parser.parse(content: "").enum)
     }
     
     func testBasic() {
@@ -38,7 +38,7 @@ public enum Tld: String {
     _static = "static"
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -82,7 +82,7 @@ public enum Tld: String {
     ck
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 *.ck
 """).enum)
     }
@@ -97,7 +97,7 @@ public enum Tld: String {
     www
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 !www.ck
 """).enum)
     }

@@ -1,6 +1,6 @@
 import Foundation
 
-enum TldParser {
+enum Parser {
     static func parse(content: String) -> (enum: String, suffix: String) {
         {
             ($0.set.serial, $0.dictionary.serial)

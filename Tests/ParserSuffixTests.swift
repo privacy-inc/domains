@@ -1,6 +1,6 @@
 import XCTest
 
-final class TldParserSuffixTests: XCTestCase {
+final class ParserSuffixTests: XCTestCase {
     func testEmpty() {
         XCTAssertEqual("""
 import Foundation
@@ -10,7 +10,7 @@ extension Tld {
 ]
 }
 
-""", TldParser.parse(content: "").suffix)
+""", Parser.parse(content: "").suffix)
     }
     
     func testBasic() {
@@ -25,7 +25,7 @@ extension Tld {
         .org : .end]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -64,7 +64,7 @@ extension Tld {
             .zc8 : .end])]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 org
 zc8.org
 org
@@ -89,7 +89,7 @@ extension Tld {
 ]))]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 *.ck
 """).suffix)
     }
@@ -104,7 +104,7 @@ extension Tld {
             .www]))]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 !www.ck
 """).suffix)
     }
@@ -120,7 +120,7 @@ extension Tld {
             .www]))]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 *.ck
 !www.ck
 !asd.ck
@@ -139,7 +139,7 @@ extension Tld {
             .www]))]
 }
 
-""", TldParser.parse(content: """
+""", Parser.parse(content: """
 !www.ck
 !asd.ck
 !0.ck

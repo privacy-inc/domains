@@ -5,6 +5,7 @@ extension Set where Element == Tld {
         Tld(rawValue: string)
             .flatMap {
                 contains($0)
-            } ?? false
+            }
+        ?? false
     }
 }
