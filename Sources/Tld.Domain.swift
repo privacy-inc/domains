@@ -1,7 +1,7 @@
 import Foundation
 
 extension Tld {
-    public static func deconstruct(host: String) -> Domain {
+    public static func domain(host: String) -> Domain {
         var components = host.components(separatedBy: ".")
         var suffix = [String]()
         var domain = ""
@@ -31,22 +31,22 @@ extension Tld {
                         if wildcard.contains($0) {
                             domain = $0
                         } else {
-                            suffix.insert($0, at: 0)
-                            components
-                                .popLast()
-                                .map {
-                                    domain = $0
-                                }
+                            if components.isEmpty {
+                                domain = $0
+                            } else {
+                                suffix.insert($0, at: 0)
+                                domain = components.popLast()!
+                            }
                         }
                     }
                 next = nil
             case .end:
-                suffix.insert(next!, at: 0)
-                components
-                    .popLast()
-                    .map {
-                        domain = $0
-                    }
+                if components.isEmpty {
+                    domain = next!
+                } else {
+                    suffix.insert(next!, at: 0)
+                    domain = components.popLast()!
+                }
                 next = nil
             case nil:
                 domain = next!

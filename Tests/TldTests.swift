@@ -12,13 +12,20 @@ final class TldTests: XCTestCase {
         XCTAssertEqual("something=done&another=true", url.query)
     }
     
+    func testHttpbin() {
+        let url = URL(string: "https://httpbin.org/base64/PHNjcmlwdD5vbm1lc3NhZ2UgPSBlID0+IGUuZGF0YS5wb3N0TWVzc2FnZShuYXZpZ2F0b3IuY29va2llRW5hYmxlZCk8L3NjcmlwdD4=")!
+        let domain = Tld.domain(host: url.host!)
+        XCTAssertEqual("httpbin", domain.name)
+        XCTAssertEqual("org", domain.suffix.first)
+    }
+    
     func testEmpty() {
         {
             XCTAssertEqual("", $0.name)
             XCTAssertTrue($0.suffix.isEmpty)
             XCTAssertTrue($0.prefix.isEmpty)
             XCTAssertEqual("", $0.minimal)
-        } (Tld.deconstruct(host: ""))
+        } (Tld.domain(host: ""))
     }
     
     func testUnknown() {
@@ -27,7 +34,7 @@ final class TldTests: XCTestCase {
             XCTAssertTrue($0.suffix.isEmpty)
             XCTAssertTrue($0.prefix.isEmpty)
             XCTAssertEqual("dsfasfsdfsdfsdfasdfasd", $0.minimal)
-        } (Tld.deconstruct(host: "dsfasfsdfsdfsdfasdfasd"))
+        } (Tld.domain(host: "dsfasfsdfsdfsdfasdfasd"))
     }
     
     func testBasic() {
@@ -36,7 +43,7 @@ final class TldTests: XCTestCase {
             XCTAssertEqual("com", $0.suffix.first)
             XCTAssertTrue($0.prefix.isEmpty)
             XCTAssertEqual("avocado.com", $0.minimal)
-        } (Tld.deconstruct(host: "avocado.com"))
+        } (Tld.domain(host: "avocado.com"))
     }
     
     func testDouble() {
@@ -47,7 +54,7 @@ final class TldTests: XCTestCase {
             XCTAssertEqual(1, $0.prefix.count)
             XCTAssertEqual("www", $0.prefix.first)
             XCTAssertEqual("avocado.com.mx", $0.minimal)
-        } (Tld.deconstruct(host: "www.avocado.com.mx"))
+        } (Tld.domain(host: "www.avocado.com.mx"))
     }
     
     func testWildcard() {
@@ -59,7 +66,7 @@ final class TldTests: XCTestCase {
             XCTAssertEqual("www", $0.prefix.first)
             XCTAssertEqual("total", $0.prefix.last)
             XCTAssertEqual("avocado.chuchu.ck", $0.minimal)
-        } (Tld.deconstruct(host: "www.more.total.avocado.chuchu.ck"))
+        } (Tld.domain(host: "www.more.total.avocado.chuchu.ck"))
     }
     
     func testException() {
@@ -70,6 +77,6 @@ final class TldTests: XCTestCase {
             XCTAssertEqual("www", $0.prefix.first)
             XCTAssertEqual("avocado", $0.prefix.last)
             XCTAssertEqual("www.ck", $0.minimal)
-        } (Tld.deconstruct(host: "www.avocado.www.ck"))
+        } (Tld.domain(host: "www.avocado.www.ck"))
     }
 }
