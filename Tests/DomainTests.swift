@@ -49,6 +49,7 @@ final class DomainTests: XCTestCase {
     func testDouble() {
         {
             XCTAssertEqual("avocado", $0.name)
+            XCTAssertEqual(2, $0.suffix.count)
             XCTAssertEqual("com", $0.suffix.first)
             XCTAssertEqual("mx", $0.suffix.last)
             XCTAssertEqual(1, $0.prefix.count)
