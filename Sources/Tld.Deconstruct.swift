@@ -1,7 +1,7 @@
 import Foundation
 
 extension Tld {
-    public static func deconstruct(url: String) -> (domain: String, suffix: String) {
+    public static func deconstruct(url: String) -> Domain {
         url
             .components {
                 var components = $0
@@ -35,7 +35,7 @@ extension Tld {
                                 } else {
                                     suffix.insert($0, at: 0)
                                     components
-                                        .last
+                                        .popLast()
                                         .map {
                                             domain = $0
                                         }
@@ -45,21 +45,18 @@ extension Tld {
                     case .end:
                         suffix.insert(next!, at: 0)
                         components
-                            .last
+                            .popLast()
                             .map {
                                 domain = $0
                             }
                         next = nil
-                        break
                     case nil:
                         domain = next!
                         next = nil
                     }
                 }
                 
-                return (domain: domain, suffix: suffix.isEmpty
-                            ? ""
-                            : "." + suffix.joined(separator: "."))
+                return .init(name: domain, prefix: components, suffix: suffix)
             }
     }
 }
