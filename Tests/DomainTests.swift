@@ -80,12 +80,4 @@ final class DomainTests: XCTestCase {
             XCTAssertEqual("www.ck", $0.minimal)
         } (Tld.domain(host: "www.avocado.www.ck"))
     }
-    
-    func testPrefixLenght() {
-        XCTAssertEqual(12, Tld.domain(host: "www.avocado.www.ck").prefixLenght)
-        XCTAssertEqual(0, Tld.domain(host: "hello.com").prefixLenght)
-        XCTAssertEqual(2, Tld.domain(host: "a.hello.com").prefixLenght)
-        XCTAssertEqual(4, Tld.domain(host: "www.hello.com").prefixLenght)
-        XCTAssertEqual(6, Tld.domain(host: "www.a.hello.com").prefixLenght)
-    }
 }

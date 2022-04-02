@@ -5,14 +5,21 @@ public struct Domain {
     public let prefix: [String]
     public let suffix: [String]
     
-    public var minimal: String {
+    var minimal: String {
         name + (suffix.isEmpty
         ? ""
         : "." + suffix
             .joined(separator: "."))
     }
     
-    public var prefixLenght: Int {
+    var median: String {
+        (prefix.isEmpty
+        ? ""
+        : prefix
+            .joined(separator: ".") + ".") + minimal
+    }
+    
+    var prefixLenght: Int {
         prefix
             .map {
                 $0.count + 1
