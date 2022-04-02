@@ -136,7 +136,6 @@ extension Tld {
             .gov : .end,
             .net : .end,
             .org : .end]),
-        .afamilycompany : .end,
         .afl : .end,
         .africa : .end,
         .ag : .previous([
@@ -205,12 +204,16 @@ extension Tld {
         .aol : .end,
         .apartments : .end,
         .app : .previous([
+            .beget : .wildcard(.init([
+])),
             .bookonline : .end,
             .clerk : .end,
             .clerkstage : .end,
+            .deta : .end,
             .developer : .wildcard(.init([
 ])),
             .edgecompute : .end,
+            .encr : .end,
             .fireweb : .end,
             .framer : .end,
             .hasura : .end,
@@ -220,10 +223,12 @@ extension Tld {
             .northflank : .wildcard(.init([
 ])),
             .ondigitalocean : .end,
+            .onflashdrive : .end,
             .platform0 : .end,
             .run : .previous([
                 .a : .end]),
             .telebit : .end,
+            .typedream : .end,
             .vercel : .end,
             .web : .end,
             .wnext : .end]),
@@ -812,7 +817,6 @@ extension Tld {
             .gov : .end,
             .net : .end,
             .org : .end]),
-        .budapest : .end,
         .bugatti : .end,
         .build : .end,
         .builders : .previous([
@@ -994,6 +998,8 @@ extension Tld {
 ])),
             .diadem : .end,
             .elementor : .end,
+            .encoway : .previous([
+                .eu : .end]),
             .jelastic : .previous([
                 .vip : .end]),
             .jele : .end,
@@ -1017,6 +1023,7 @@ extension Tld {
             .perspecta : .end,
             .primetel : .previous([
                 .uk : .end]),
+            .ravendb : .end,
             .reclaim : .previous([
                 .ca : .end,
                 .uk : .end,
@@ -1085,6 +1092,8 @@ extension Tld {
             .nx : .end,
             .org : .end,
             .qh : .end,
+            .quickconnect : .previous([
+                .direct : .end]),
             .sc : .end,
             .sd : .end,
             .sh : .end,
@@ -1116,7 +1125,6 @@ extension Tld {
             .mypi : .end,
             .n4t : .end,
             .net : .end,
-            .nodum : .end,
             .nom : .end,
             .org : .end,
             .otap : .wildcard(.init([
@@ -1144,6 +1152,9 @@ extension Tld {
                 .dev : .wildcard(.init([
 ]))]),
             .africa : .end,
+            .airkitapps : .end,
+            .airkitapps_au : .end,
+            .aivencloud : .end,
             .alpha_myqnapcloud : .end,
             .amazonaws : .previous([
                 .ap_northeast_1 : .previous([
@@ -1291,6 +1302,10 @@ extension Tld {
             .dev_myqnapcloud : .end,
             .devcdnaccesso : .wildcard(.init([
 ])),
+            .digitaloceanspaces : .wildcard(.init([
+])),
+            .discordsays : .end,
+            .discordsez : .end,
             .ditchyourip : .end,
             .dnsalias : .end,
             .dnsdojo : .end,
@@ -1337,9 +1352,7 @@ extension Tld {
                 .us_gov_west_1 : .end,
                 .us_west_1 : .end,
                 .us_west_2 : .end]),
-            .elluciancrmadvance : .end,
-            .elluciancrmadvise : .end,
-            .elluciancrmrecruit : .end,
+            .encoreapi : .end,
             .est_a_la_maison : .end,
             .est_a_la_masion : .end,
             .est_le_patron : .end,
@@ -1361,6 +1374,7 @@ extension Tld {
                 .apps : .end]),
             .firebaseapp : .end,
             .firewall_gateway : .end,
+            .fldrv : .end,
             .forgeblocks : .end,
             .framercanvas : .end,
             .freebox_os : .end,
@@ -1413,7 +1427,6 @@ extension Tld {
             .from_wi : .end,
             .from_wv : .end,
             .from_wy : .end,
-            .gb : .end,
             .geekgalaxy : .end,
             .gentapps : .end,
             .gentlentapis : .end,
@@ -1445,13 +1458,11 @@ extension Tld {
             .hotelwithflight : .end,
             .hu : .end,
             .iamallama : .end,
-            .idnblogger : .end,
             .ik_server : .previous([
                 .jcloud : .end,
                 .jcloud_ver_jpc : .end]),
             .impertrix : .end,
             .impertrixcdn : .end,
-            .indowapblog : .end,
             .is_a_anarchist : .end,
             .is_a_blogger : .end,
             .is_a_bookkeeper : .end,
@@ -1521,6 +1532,7 @@ extension Tld {
             .kilatiron : .end,
             .kozow : .end,
             .kr : .end,
+            .ktistory : .end,
             .likes_pie : .end,
             .likescandy : .end,
             .linode : .previous([
@@ -1529,6 +1541,8 @@ extension Tld {
 ]))]),
             .linodeobjects : .wildcard(.init([
 ])),
+            .linodeusercontent : .previous([
+                .ip : .end]),
             .lmpm : .previous([
                 .app : .end]),
             .logoip : .end,
@@ -1537,6 +1551,7 @@ extension Tld {
             .massivegrid : .previous([
                 .paas : .end]),
             .mazeplay : .end,
+            .messwithdns : .end,
             .meteorapp : .previous([
                 .eu : .end]),
             .mex : .end,
@@ -1571,6 +1586,8 @@ extension Tld {
             .net_freaks : .end,
             .nfshost : .end,
             .no : .end,
+            .nospamproxy : .previous([
+                .cloud : .end]),
             .observableusercontent : .previous([
                 ._static : .end]),
             .on_aptible : .end,
@@ -1637,6 +1654,7 @@ extension Tld {
             .servequake : .end,
             .servesarcasm : .end,
             .shopitsite : .end,
+            .siiites : .end,
             .simple_url : .end,
             .sinaapp : .end,
             .skygearapp : .end,
@@ -1646,6 +1664,8 @@ extension Tld {
             .stdlib : .previous([
                 .api : .end]),
             .stufftoread : .end,
+            .tb_hosting : .previous([
+                .site : .end]),
             .teaches_yoga : .end,
             .temp_dns : .end,
             .theworkpc : .end,
@@ -1654,11 +1674,15 @@ extension Tld {
             .try_snowplow : .end,
             .trycloudflare : .end,
             .tuleap_partners : .end,
+            .typeform : .previous([
+                .pro : .end]),
             .uk : .end,
             .unusualperson : .end,
             .us : .end,
             .uy : .end,
             .vipsinaapp : .end,
+            .vultrobjects : .wildcard(.init([
+])),
             .wafaicloud : .previous([
                 .jed : .end,
                 .lon : .end,
@@ -1725,7 +1749,6 @@ extension Tld {
         .crs : .end,
         .cruise : .end,
         .cruises : .end,
-        .csc : .end,
         .cu : .previous([
             .com : .end,
             .edu : .end,
@@ -1735,7 +1758,12 @@ extension Tld {
             .org : .end]),
         .cuisinella : .end,
         .cv : .previous([
-            .blogspot : .end]),
+            .blogspot : .end,
+            .com : .end,
+            .edu : .end,
+            .int : .end,
+            .nome : .end,
+            .org : .end]),
         .cw : .previous([
             .com : .end,
             .edu : .end,
@@ -1755,10 +1783,9 @@ extension Tld {
             .ekloges : .end,
             .gov : .end,
             .ltd : .end,
-            .name : .end,
+            .mil : .end,
             .net : .end,
             .org : .end,
-            .parliament : .end,
             .press : .end,
             .pro : .end,
             .tm : .end]),
@@ -1883,6 +1910,7 @@ extension Tld {
             .curv : .end,
             .deno : .end,
             .deno_staging : .end,
+            .deta : .end,
             .fly : .end,
             .gateway : .wildcard(.init([
 ])),
@@ -1892,6 +1920,9 @@ extension Tld {
 ])),
             .lclstage : .wildcard(.init([
 ])),
+            .localcert : .previous([
+                .user : .wildcard(.init([
+]))]),
             .loginline : .end,
             .mediatech : .end,
             .pages : .end,
@@ -1953,7 +1984,6 @@ extension Tld {
         .drive : .end,
         .dtv : .end,
         .dubai : .end,
-        .duck : .end,
         .dunlop : .end,
         .dupont : .end,
         .durban : .end,
@@ -1976,6 +2006,7 @@ extension Tld {
 ]))])]),
         .eat : .end,
         .ec : .previous([
+            .base : .end,
             .com : .end,
             .edu : .end,
             .fin : .end,
@@ -1986,6 +2017,7 @@ extension Tld {
             .med : .end,
             .mil : .end,
             .net : .end,
+            .official : .end,
             .org : .end,
             .pro : .end]),
         .eco : .end,
@@ -2053,6 +2085,7 @@ extension Tld {
             .org : .end]),
         .etisalat : .end,
         .eu : .previous([
+            .airkitapps : .end,
             .barsy : .end,
             .cloudns : .end,
             .diskstation : .end,
@@ -2068,7 +2101,8 @@ extension Tld {
             .party : .previous([
                 .user : .end])]),
         .events : .previous([
-            .co : .end]),
+            .co : .end,
+            .koobin : .end]),
         .exchange : .end,
         .expert : .end,
         .exposed : .end,
@@ -2103,6 +2137,7 @@ extension Tld {
             .dy : .end,
             .häkkinen : .end,
             .iki : .end,
+            .kapsi : .end,
             .myspreadshop : .end]),
         .fiat : .end,
         .fidelity : .end,
@@ -2265,7 +2300,6 @@ extension Tld {
             .net : .end,
             .org : .end,
             .xx : .end]),
-        .glade : .end,
         .glass : .end,
         .gle : .end,
         .global : .end,
@@ -2290,7 +2324,9 @@ extension Tld {
         .goodyear : .end,
         .goog : .previous([
             .cloud : .end,
-            .translate : .end]),
+            .translate : .end,
+            .usercontent : .wildcard(.init([
+]))]),
         .google : .end,
         .gop : .end,
         .got : .end,
@@ -2508,7 +2544,6 @@ extension Tld {
         .id : .previous([
             .ac : .end,
             .biz : .end,
-            .bloger : .end,
             .co : .previous([
                 .blogspot : .end]),
             .desa : .end,
@@ -2523,7 +2558,6 @@ extension Tld {
             .or : .end,
             .ponpes : .end,
             .sch : .end,
-            .wblog : .end,
             .web : .end]),
         .ie : .previous([
             .blogspot : .end,
@@ -2644,6 +2678,7 @@ extension Tld {
             .drud : .end,
             .dyn53 : .end,
             .editorx : .end,
+            .edugit : .end,
             .fh_muenster : .end,
             .forgerock : .previous([
                 .id : .end]),
@@ -2661,11 +2696,11 @@ extension Tld {
             .mo_siemens : .end,
             .moonscale : .wildcard(.init([
 ])),
+            .musician : .end,
             .ngrok : .end,
             .nid : .end,
             .nodeart : .previous([
                 .stage : .end]),
-            .nodum : .end,
             .on_k3s : .wildcard(.init([
 ])),
             .on_rio : .wildcard(.init([
@@ -2704,8 +2739,10 @@ extension Tld {
                 .testing : .previous([
                     .cust : .end,
                     .reservd : .end])]),
+            .tickets : .end,
             .unispace : .previous([
                 .cloud_fr1 : .end]),
+            .upli : .end,
             .utwente : .end,
             .vaporcloud : .end,
             .vbrplsbx : .previous([
@@ -3280,6 +3317,7 @@ extension Tld {
                 .semboku : .end,
                 .yokote : .end,
                 .yurihonjo : .end]),
+            .angry : .end,
             .aomori : .previous([
                 .aomori : .end,
                 .gonohe : .end,
@@ -3303,7 +3341,22 @@ extension Tld {
                 .towada : .end,
                 .tsugaru : .end,
                 .tsuruta : .end]),
+            .babyblue : .end,
+            .babymilk : .end,
+            .backdrop : .end,
+            .bambina : .end,
+            .bitter : .end,
             .blogspot : .end,
+            .blush : .end,
+            .boo : .end,
+            .boy : .end,
+            .boyfriend : .end,
+            .but : .end,
+            .buyshop : .end,
+            .candypop : .end,
+            .capoo : .end,
+            .catfood : .end,
+            .cheap : .end,
             .chiba : .previous([
                 .abiko : .end,
                 .asahi : .end,
@@ -3363,8 +3416,23 @@ extension Tld {
                 .yokaichiba : .end,
                 .yokoshibahikari : .end,
                 .yotsukaido : .end]),
+            .chicappa : .end,
+            .chillout : .end,
+            .chips : .end,
+            .chowder : .end,
+            .chu : .end,
+            .ciao : .end,
             .co : .end,
+            .cocotte : .end,
+            .coolblog : .end,
+            .cranky : .end,
+            .cutegirl : .end,
+            .daa : .end,
+            .deca : .end,
+            .deci : .end,
+            .digick : .end,
             .ed : .end,
+            .egoism : .end,
             .ehime : .previous([
                 .ainan : .end,
                 .honai : .end,
@@ -3388,6 +3456,13 @@ extension Tld {
                 .uchiko : .end,
                 .uwajima : .end,
                 .yawatahama : .end]),
+            .fakefur : .end,
+            .fashionstore : .end,
+            .fem : .end,
+            .flier : .end,
+            .floppy : .end,
+            .fool : .end,
+            .frenchkiss : .end,
             .fukui : .previous([
                 .echizen : .end,
                 .eiheiji : .end,
@@ -3559,8 +3634,13 @@ extension Tld {
                 .yamagata : .end,
                 .yaotsu : .end,
                 .yoro : .end]),
+            .girlfriend : .end,
+            .girly : .end,
+            .gloomy : .end,
             .go : .end,
+            .gonna : .end,
             .gr : .end,
+            .greater : .end,
             .gunma : .previous([
                 .annaka : .end,
                 .chiyoda : .end,
@@ -3598,6 +3678,12 @@ extension Tld {
                 .tsumagoi : .end,
                 .ueno : .end,
                 .yoshioka : .end]),
+            .hacca : .end,
+            .handcrafted : .end,
+            .heavy : .end,
+            .her : .end,
+            .hiho : .end,
+            .hippy : .end,
             .hiroshima : .previous([
                 .asaminami : .end,
                 .daiwa : .end,
@@ -3767,6 +3853,8 @@ extension Tld {
                 .wassamu : .end,
                 .yakumo : .end,
                 .yoichi : .end]),
+            .holy : .end,
+            .hungry : .end,
             .hyogo : .previous([
                 .aioi : .end,
                 .akashi : .end,
@@ -3866,6 +3954,7 @@ extension Tld {
                 .yamagata : .end,
                 .yawara : .end,
                 .yuki : .end]),
+            .icurus : .end,
             .ishikawa : .previous([
                 .anamizu : .end,
                 .hakui : .end,
@@ -3886,6 +3975,7 @@ extension Tld {
                 .tsurugi : .end,
                 .uchinada : .end,
                 .wajima : .end]),
+            .itigo : .end,
             .iwate : .previous([
                 .fudai : .end,
                 .fujisawa : .end,
@@ -3921,6 +4011,7 @@ extension Tld {
                 .tono : .end,
                 .yahaba : .end,
                 .yamada : .end]),
+            .jellybean : .end,
             .kagawa : .previous([
                 .ayagawa : .end,
                 .higashikagawa : .end,
@@ -3989,8 +4080,12 @@ extension Tld {
                 .yugawara : .end,
                 .zama : .end,
                 .zushi : .end]),
+            .kawaiishop : .end,
             .kawasaki : .wildcard(.init([
                 .city])),
+            .kikirara : .end,
+            .kill : .end,
+            .kilo : .end,
             .kitakyushu : .wildcard(.init([
                 .city])),
             .kobe : .wildcard(.init([
@@ -4051,6 +4146,7 @@ extension Tld {
                 .yamaga : .end,
                 .yamato : .end,
                 .yatsushiro : .end]),
+            .kuron : .end,
             .kyoto : .previous([
                 .ayabe : .end,
                 .fukuchiyama : .end,
@@ -4084,6 +4180,12 @@ extension Tld {
                 .yamashina : .end,
                 .yawata : .end]),
             .lg : .end,
+            .littlestar : .end,
+            .lolitapunk : .end,
+            .lomo : .end,
+            .lovepop : .end,
+            .lovesick : .end,
+            .main : .end,
             .mie : .previous([
                 .asahi : .end,
                 .inabe : .end,
@@ -4176,6 +4278,10 @@ extension Tld {
                 .takanabe : .end,
                 .takazaki : .end,
                 .tsuno : .end]),
+            .mods : .end,
+            .mond : .end,
+            .mongolian : .end,
+            .moo : .end,
             .nagano : .previous([
                 .achi : .end,
                 .agematsu : .end,
@@ -4277,6 +4383,7 @@ extension Tld {
                 .unzen : .end]),
             .nagoya : .wildcard(.init([
                 .city])),
+            .namaste : .end,
             .nara : .previous([
                 .ando : .end,
                 .gose : .end,
@@ -4355,6 +4462,9 @@ extension Tld {
                 .yahiko : .end,
                 .yoita : .end,
                 .yuzawa : .end]),
+            .nikita : .end,
+            .nobushi : .end,
+            .noor : .end,
             .oita : .previous([
                 .beppu : .end,
                 .bungoono : .end,
@@ -4445,6 +4555,7 @@ extension Tld {
                 .yonabaru : .end,
                 .yonaguni : .end,
                 .zamami : .end]),
+            .oops : .end,
             .or : .end,
             .osaka : .previous([
                 .abeno : .end,
@@ -4497,6 +4608,22 @@ extension Tld {
                 .toyonaka : .end,
                 .toyono : .end,
                 .yao : .end]),
+            .parallel : .end,
+            .parasite : .end,
+            .pecori : .end,
+            .peewee : .end,
+            .penne : .end,
+            .pepper : .end,
+            .perma : .end,
+            .pigboat : .end,
+            .pinoko : .end,
+            .punyu : .end,
+            .pupu : .end,
+            .pussycat : .end,
+            .pya : .end,
+            .raindrop : .end,
+            .readymade : .end,
+            .sadist : .end,
             .saga : .previous([
                 .ariake : .end,
                 .arita : .end,
@@ -4596,6 +4723,8 @@ extension Tld {
                 .yoshimi : .end]),
             .sapporo : .wildcard(.init([
                 .city])),
+            .schoolbus : .end,
+            .secret : .end,
             .sendai : .wildcard(.init([
                 .city])),
             .shiga : .previous([
@@ -4683,6 +4812,13 @@ extension Tld {
                 .susono : .end,
                 .yaizu : .end,
                 .yoshida : .end]),
+            .staba : .end,
+            .stripper : .end,
+            .sub : .end,
+            .sunnyday : .end,
+            .supersale : .end,
+            .theshop : .end,
+            .thick : .end,
             .tochigi : .previous([
                 .ashikaga : .end,
                 .bato : .end,
@@ -4791,6 +4927,7 @@ extension Tld {
                 .taito : .end,
                 .tama : .end,
                 .toshima : .end]),
+            .tonkotsu : .end,
             .tottori : .previous([
                 .chizu : .end,
                 .hino : .end,
@@ -4830,7 +4967,13 @@ extension Tld {
                 .unazuki : .end,
                 .uozu : .end,
                 .yamada : .end]),
+            .under : .end,
+            .upper : .end,
             .usercontent : .end,
+            .velvet : .end,
+            .verse : .end,
+            .versus : .end,
+            .vivian : .end,
             .wakayama : .previous([
                 .arida : .end,
                 .aridagawa : .end,
@@ -4861,6 +5004,9 @@ extension Tld {
                 .wakayama : .end,
                 .yuasa : .end,
                 .yura : .end]),
+            .watson : .end,
+            .weblike : .end,
+            .whitesnow : .end,
             .yamagata : .previous([
                 .asahi : .end,
                 .funagata : .end,
@@ -4944,6 +5090,7 @@ extension Tld {
                 .yamanashi : .end]),
             .yokohama : .wildcard(.init([
                 .city])),
+            .zombie : .end,
             ._三重 : .end,
             .京都 : .end,
             .佐賀 : .end,
@@ -5124,7 +5271,6 @@ extension Tld {
         .ky : .previous([
             .com : .end,
             .edu : .end,
-            .gov : .end,
             .net : .end,
             .org : .end]),
         .kyoto : .end,
@@ -5211,7 +5357,6 @@ extension Tld {
         .live : .previous([
             .hlx : .end]),
         .living : .end,
-        .lixil : .end,
         .lk : .previous([
             .ac : .end,
             .assn : .end,
@@ -5335,7 +5480,6 @@ extension Tld {
             .brasilia : .end,
             .c66 : .end,
             .co : .end,
-            .couk : .end,
             .daplie : .previous([
                 .localhost : .end]),
             .ddns : .end,
@@ -5371,9 +5515,9 @@ extension Tld {
             .synology : .end,
             .tbits : .end,
             .tcp4 : .end,
-            .ukco : .end,
+            .transip : .previous([
+                .site : .end]),
             .vp4 : .end,
-            .wbq : .end,
             .webhop : .end,
             .wedeploy : .end,
             .yombo : .end]),
@@ -6161,7 +6305,6 @@ extension Tld {
             .cdn77_ssl : .end,
             .channelsdvr : .previous([
                 .u : .end]),
-            .clic2000 : .end,
             .clickrising : .end,
             .cloudaccess : .end,
             .cloudapp : .end,
@@ -6196,7 +6339,6 @@ extension Tld {
                 .jls_sto3 : .end]),
             .endofinternet : .end,
             .familyds : .end,
-            .fastblog : .end,
             .fastly : .previous([
                 .freetls : .end,
                 .map : .end,
@@ -6220,6 +6362,7 @@ extension Tld {
             .gb : .end,
             .gets_it : .end,
             .ham_radio_op : .end,
+            .heteml : .end,
             .hicam : .end,
             .homeftp : .end,
             .homeip : .end,
@@ -6293,6 +6436,7 @@ extension Tld {
             .serveblog : .end,
             .serveftp : .end,
             .serveminecraft : .end,
+            .shopselect : .end,
             .siteleaf : .end,
             .square7 : .end,
             .srcf : .previous([
@@ -6302,9 +6446,12 @@ extension Tld {
             .supabase : .end,
             .sytes : .end,
             .t3l3p0rt : .end,
+            .tailscale : .previous([
+                .beta : .end]),
             .thruhere : .end,
             .torproject : .previous([
                 .pages : .end]),
+            .ts : .end,
             .tsukaeru : .previous([
                 .jelastic : .end]),
             .twmail : .end,
@@ -6390,7 +6537,6 @@ extension Tld {
         .nissan : .end,
         .nissay : .end,
         .nl : .previous([
-            .amsw : .end,
             .blogspot : .end,
             .cistron : .end,
             .co : .end,
@@ -6399,8 +6545,7 @@ extension Tld {
             .khplay : .end,
             .myspreadshop : .end,
             .transurl : .wildcard(.init([
-])),
-            .virtueeldomein : .end]),
+]))]),
         .no : .previous([
             .aa : .previous([
                 .gs : .end]),
@@ -7214,7 +7359,6 @@ extension Tld {
             .school : .end]),
         .obi : .end,
         .observer : .end,
-        .off : .end,
         .office : .end,
         .okinawa : .end,
         .olayan : .end,
@@ -7249,7 +7393,8 @@ extension Tld {
         .ooo : .end,
         .open : .end,
         .oracle : .end,
-        .orange : .end,
+        .orange : .previous([
+            .tech : .end]),
         .org : .previous([
             .accesscam : .end,
             .ae : .end,
@@ -7288,7 +7433,6 @@ extension Tld {
                 .go : .end,
                 .home : .end]),
             .dynserv : .end,
-            .edugit : .end,
             .endofinternet : .end,
             .endoftheinternet : .end,
             .eu : .previous([
@@ -7421,6 +7565,8 @@ extension Tld {
             .spdns : .end,
             .stuff_4_sale : .end,
             .sweetpepper : .end,
+            .teckids : .previous([
+                .s3 : .end]),
             .toolforge : .end,
             .tunk : .end,
             .tuxfamily : .end,
@@ -7453,12 +7599,15 @@ extension Tld {
             .org : .end,
             .sld : .end]),
         .page : .previous([
+            .codeberg : .end,
             .hlx : .end,
             .hlx3 : .end,
             .magnet : .end,
             .pdns : .end,
             .plesk : .end,
-            .prvcy : .end]),
+            .prvcy : .end,
+            .rocky : .end,
+            .translated : .end]),
         .panasonic : .end,
         .paris : .end,
         .pars : .end,
@@ -7870,10 +8019,8 @@ extension Tld {
         .qpon : .end,
         .quebec : .end,
         .quest : .end,
-        .qvc : .end,
         .racing : .end,
         .radio : .end,
-        .raid : .end,
         .re : .previous([
             .asso : .end,
             .blogspot : .end,
@@ -7911,7 +8058,6 @@ extension Tld {
         .rio : .end,
         .rip : .previous([
             .clan : .end]),
-        .rmit : .end,
         .ro : .previous([
             .arts : .end,
             .barsy : .end,
@@ -8003,10 +8149,17 @@ extension Tld {
         .rugby : .end,
         .ruhr : .end,
         .run : .previous([
+            .build : .wildcard(.init([
+])),
             .code : .wildcard(.init([
+])),
+            .database : .wildcard(.init([
 ])),
             .development : .end,
             .hs : .end,
+            .migration : .wildcard(.init([
+])),
+            .onporter : .end,
             .ravendb : .end,
             .repl : .end,
             .servers : .end]),
@@ -8070,7 +8223,6 @@ extension Tld {
         .schwarz : .end,
         .science : .previous([
             .ybo : .end]),
-        .scjohnson : .end,
         .scot : .previous([
             .edu : .end,
             .gov : .previous([
@@ -8180,7 +8332,9 @@ extension Tld {
         .shiksha : .end,
         .shoes : .end,
         .shop : .previous([
-            .barsy : .end]),
+            .barsy : .end,
+            .base : .end,
+            .hoplix : .end]),
         .shopping : .end,
         .shouji : .end,
         .show : .end,
@@ -8376,7 +8530,6 @@ extension Tld {
             .org : .end,
             .red : .end]),
         .swatch : .end,
-        .swiftcover : .end,
         .swiss : .end,
         .sx : .previous([
             .gov : .end]),
@@ -8477,10 +8630,7 @@ extension Tld {
             .org : .end]),
         .tmall : .end,
         .tn : .previous([
-            .agrinet : .end,
             .com : .end,
-            .defense : .end,
-            .edunet : .end,
             .ens : .end,
             .fin : .end,
             .gov : .end,
@@ -8493,11 +8643,7 @@ extension Tld {
             .orangecloud : .end,
             .org : .end,
             .perso : .end,
-            .rnrt : .end,
-            .rns : .end,
-            .rnu : .end,
-            .tourism : .end,
-            .turen : .end]),
+            .tourism : .end]),
         .to : .previous([
             ._611 : .end,
             .com : .end,
@@ -8512,7 +8658,8 @@ extension Tld {
                 .direct : .end]),
             .rdv : .end,
             .vpnplus : .end]),
-        .today : .end,
+        .today : .previous([
+            .prequalifyme : .end]),
         .tokyo : .end,
         .tools : .end,
         .top : .previous([
@@ -8737,9 +8884,16 @@ extension Tld {
             .conn : .end,
             .copro : .end,
             .gov : .previous([
+                .api : .end,
+                .campaign : .end,
                 .homeoffice : .end,
                 .service : .end]),
             .hosp : .end,
+            .independent_commission : .end,
+            .independent_inquest : .end,
+            .independent_inquiry : .end,
+            .independent_panel : .end,
+            .independent_review : .end,
             .ltd : .end,
             .me : .end,
             .net : .end,
@@ -8753,7 +8907,9 @@ extension Tld {
                 .weeklylottery : .end]),
             .plc : .end,
             .police : .end,
+            .public_inquiry : .end,
             .pymnt : .end,
+            .royal_commission : .end,
             .sch : .wildcard(.init([
 ]))]),
         .unicom : .end,
@@ -9377,7 +9533,6 @@ extension Tld {
         .嘉里 : .end,
         .嘉里大酒店 : .end,
         .在线 : .end,
-        .大众汽车 : .end,
         .大拿 : .end,
         .天主教 : .end,
         .娱乐 : .end,
