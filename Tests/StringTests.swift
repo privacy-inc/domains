@@ -16,6 +16,19 @@ final class StringTests: XCTestCase {
         XCTAssertEqual("hello.com", "https://hello.com".domainMinimal)
         XCTAssertEqual("hello.com", "a.hello.com/a?var=3231123".domainMinimal)
         XCTAssertEqual("twitter.com", "twitter.com/_vaux".domainMinimal)
+        XCTAssertEqual("", "https://".domainMinimal)
+        XCTAssertEqual("", "".domainMinimal)
+        XCTAssertEqual("wds", "wds".domainMinimal)
+        XCTAssertEqual("linkedin.com", "https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domainMinimal)
+        XCTAssertEqual("linkedin.com", "www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domainMinimal)
+        XCTAssertEqual("hello.com", "www.hello.com".domainMinimal)
+        XCTAssertEqual("hello.com", "www.hello.com/lol".domainMinimal)
+        XCTAssertEqual("hello.com", "www.hello.com:8080".domainMinimal)
+        XCTAssertEqual("hello.com", "www.hello.com:8080/lol".domainMinimal)
+        XCTAssertEqual("world.com", "www.hello.world.com/lol".domainMinimal)
+        XCTAssertEqual("world.com", "https://hello.world.com/lol".domainMinimal)
+        XCTAssertEqual("bbc.co.uk", "https://bbc.co.uk".domainMinimal)
+        XCTAssertEqual("privacy-inc.github.io", "https://privacy-inc.github.io/about".domainMinimal)
     }
 
     func testDomainFull() {
