@@ -1,9 +1,9 @@
 import Foundation
 
 public struct Domain {
-    let name: String
-    let prefix: [String]
-    let suffix: [String]
+    public let name: String
+    public let prefix: [String]
+    public let suffix: [String]
     
     public var minimal: String {
         name + (suffix.isEmpty
