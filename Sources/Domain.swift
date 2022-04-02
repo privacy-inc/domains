@@ -1,15 +1,23 @@
 import Foundation
 
 public struct Domain {
-    public let name: String
-    public let prefix: [String]
-    public let suffix: [String]
+    let name: String
+    let prefix: [String]
+    let suffix: [String]
     
     public var minimal: String {
         name + (suffix.isEmpty
         ? ""
         : "." + suffix
             .joined(separator: "."))
+    }
+    
+    public var prefixLenght: Int {
+        prefix
+            .map {
+                $0.count + 1
+            }
+            .reduce(0, +)
     }
     
     init() {
