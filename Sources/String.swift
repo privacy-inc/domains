@@ -13,14 +13,8 @@ extension String {
             .lowercased()
     }
     
-    public var domainPrefixLenght: Int {
-        domain
-            .prefixLenght
-    }
-    
-    public var schemeless: String {
-        replacingOccurrences(of: "https://", with: "")
-            .replacingOccurrences(of: "http://", with: "")
+    public var historical: String {
+        .init(schemeless.dropFirst(domain.prefixLenght))
     }
     
     private var domain: Domain {
@@ -30,5 +24,10 @@ extension String {
             .components(separatedBy: ":")
             .first
             .map(Tld.domain(host:))!
+    }
+    
+    private var schemeless: String {
+        replacingOccurrences(of: "https://", with: "")
+            .replacingOccurrences(of: "http://", with: "")
     }
 }

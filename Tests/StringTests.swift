@@ -3,11 +3,11 @@ import XCTest
 
 final class StringTests: XCTestCase {
     func testPrefixLenght() {
-        XCTAssertEqual(12, "www.avocado.www.ck/a/b".domainPrefixLenght)
-        XCTAssertEqual(0, "https://hello.com".domainPrefixLenght)
-        XCTAssertEqual(2, "http://a.hello.com/a?ds=1".domainPrefixLenght)
-        XCTAssertEqual(4, "www.hello.com".domainPrefixLenght)
-        XCTAssertEqual(6, "www.a.hello.com/a/v/sd/dsfsafd/daf".domainPrefixLenght)
+        XCTAssertEqual("www.ck/a/b", "www.avocado.www.ck/a/b".historical)
+        XCTAssertEqual("hello.com", "https://hello.com".historical)
+        XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".historical)
+        XCTAssertEqual("hello.com", "www.hello.com".historical)
+        XCTAssertEqual("hello.com/a/v/sd/dsfsafd/daf", "www.a.hello.com/a/v/sd/dsfsafd/daf".historical)
     }
     
     func testDomainMinimal() {
