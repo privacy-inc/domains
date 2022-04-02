@@ -5,7 +5,7 @@ public struct Domain {
     public let prefix: [String]
     public let suffix: [String]
     
-    var minimal: String {
+    public var minimal: String {
         name + (suffix.isEmpty
         ? ""
         : "." + suffix
