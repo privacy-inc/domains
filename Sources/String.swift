@@ -1,27 +1,21 @@
 import Foundation
 
 extension String {
-    public var domainMinimal: String {
-        domain
+    public var domain: String {
+        _domain
             .minimal
-            .lowercased()
-    }
-    
-    public var domainFull: String {
-        domain
-            .median
             .lowercased()
     }
     
     public var comparable: String {
         schemeless
-            .dropFirst(domain.prefixLenght)
+            .dropFirst(_domain.prefixLenght)
             .components(separatedBy: "/")
             .prefix(2)
             .joined(separator: "/")
     }
     
-    private var domain: Domain {
+    private var _domain: Domain {
         schemeless
             .components(separatedBy: "/")
             .first!

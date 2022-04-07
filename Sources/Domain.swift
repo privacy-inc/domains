@@ -12,13 +12,6 @@ public struct Domain {
             .joined(separator: "."))
     }
     
-    var median: String {
-        (prefix.isEmpty
-        ? ""
-        : prefix
-            .joined(separator: ".") + ".") + minimal
-    }
-    
     var prefixLenght: Int {
         prefix
             .map {

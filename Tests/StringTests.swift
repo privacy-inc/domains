@@ -2,7 +2,7 @@ import XCTest
 @testable import Domains
 
 final class StringTests: XCTestCase {
-    func testHistorical() {
+    func testComparable() {
         XCTAssertEqual("www.ck/a", "www.avocado.www.ck/a/b".comparable)
         XCTAssertEqual("hello.com", "https://hello.com".comparable)
         XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".comparable)
@@ -11,32 +11,24 @@ final class StringTests: XCTestCase {
         XCTAssertEqual("google.com/maps", "https://www.google.com/maps/@13.0080775,47.5045485,2z?ucbcb=1".comparable)
     }
     
-    func testDomainMinimal() {
-        XCTAssertEqual("www.ck", "www.avocado.www.ck/hello".domainMinimal)
-        XCTAssertEqual("hello.com", "http://hello.com/a/b/c".domainMinimal)
-        XCTAssertEqual("hello.com", "https://hello.com".domainMinimal)
-        XCTAssertEqual("hello.com", "a.hello.com/a?var=3231123".domainMinimal)
-        XCTAssertEqual("twitter.com", "twitter.com/_vaux".domainMinimal)
-        XCTAssertEqual("", "https://".domainMinimal)
-        XCTAssertEqual("", "".domainMinimal)
-        XCTAssertEqual("wds", "wds".domainMinimal)
-        XCTAssertEqual("linkedin.com", "https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domainMinimal)
-        XCTAssertEqual("linkedin.com", "www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domainMinimal)
-        XCTAssertEqual("hello.com", "www.hello.com".domainMinimal)
-        XCTAssertEqual("hello.com", "www.hello.com/lol".domainMinimal)
-        XCTAssertEqual("hello.com", "www.hello.com:8080".domainMinimal)
-        XCTAssertEqual("hello.com", "www.hello.com:8080/lol".domainMinimal)
-        XCTAssertEqual("world.com", "www.hello.world.com/lol".domainMinimal)
-        XCTAssertEqual("world.com", "https://hello.world.com/lol".domainMinimal)
-        XCTAssertEqual("bbc.co.uk", "https://bbc.co.uk".domainMinimal)
-        XCTAssertEqual("privacy-inc.github.io", "https://privacy-inc.github.io/about".domainMinimal)
-    }
-
-    func testDomainFull() {
-        XCTAssertEqual("www.avocado.www.ck", "www.avocado.www.ck/hello".domainFull)
-        XCTAssertEqual("hello.com", "https://hello.com/a/b/c".domainFull)
-        XCTAssertEqual("hello.com", "http://hello.com".domainFull)
-        XCTAssertEqual("a.hello.com", "https://a.hello.com/a?var=3231123".domainFull)
-        XCTAssertEqual("twitter.com", "twitter.com/_vaux".domainFull)
+    func testDomain() {
+        XCTAssertEqual("www.ck", "www.avocado.www.ck/hello".domain)
+        XCTAssertEqual("hello.com", "http://hello.com/a/b/c".domain)
+        XCTAssertEqual("hello.com", "https://hello.com".domain)
+        XCTAssertEqual("hello.com", "a.hello.com/a?var=3231123".domain)
+        XCTAssertEqual("twitter.com", "twitter.com/_vaux".domain)
+        XCTAssertEqual("", "https://".domain)
+        XCTAssertEqual("", "".domain)
+        XCTAssertEqual("wds", "wds".domain)
+        XCTAssertEqual("linkedin.com", "https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domain)
+        XCTAssertEqual("linkedin.com", "www.linkedin.com/authwall?trk=bf&trkInfo=bf&originalReferer=https://www.google.com&sessionRedirect=https%3A%2F%2Fde.linkedin.com%2Fin%2Fedal%25C3%25AD-c%25C3%25A1rdenas-beltr%25C3%25A1n-38670510a".domain)
+        XCTAssertEqual("hello.com", "www.hello.com".domain)
+        XCTAssertEqual("hello.com", "www.hello.com/lol".domain)
+        XCTAssertEqual("hello.com", "www.hello.com:8080".domain)
+        XCTAssertEqual("hello.com", "www.hello.com:8080/lol".domain)
+        XCTAssertEqual("world.com", "www.hello.world.com/lol".domain)
+        XCTAssertEqual("world.com", "https://hello.world.com/lol".domain)
+        XCTAssertEqual("bbc.co.uk", "https://bbc.co.uk".domain)
+        XCTAssertEqual("privacy-inc.github.io", "https://privacy-inc.github.io/about".domain)
     }
 }
