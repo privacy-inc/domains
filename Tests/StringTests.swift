@@ -2,12 +2,13 @@ import XCTest
 @testable import Domains
 
 final class StringTests: XCTestCase {
-    func testPrefixLenght() {
-        XCTAssertEqual("www.ck/a/b", "www.avocado.www.ck/a/b".historical)
+    func testHistorical() {
+        XCTAssertEqual("www.ck/a", "www.avocado.www.ck/a/b".historical)
         XCTAssertEqual("hello.com", "https://hello.com".historical)
         XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".historical)
         XCTAssertEqual("hello.com", "www.hello.com".historical)
-        XCTAssertEqual("hello.com/a/v/sd/dsfsafd/daf", "www.a.hello.com/a/v/sd/dsfsafd/daf".historical)
+        XCTAssertEqual("hello.com/a/v/sd/dsfsafd", "www.a.hello.com/a/v/sd/dsfsafd/daf".historical)
+        XCTAssertEqual("google.com/maps", "https://www.google.com/maps/@13.0080775,47.5045485,2z?ucbcb=1".historical)
     }
     
     func testDomainMinimal() {

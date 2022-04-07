@@ -14,7 +14,9 @@ extension String {
     }
     
     public var historical: String {
-        .init(schemeless.dropFirst(domain.prefixLenght))
+        {
+            $0.count > 2 ? $0.dropLast().joined(separator: "/") : $0.joined(separator: "/")
+        } (schemeless.dropFirst(domain.prefixLenght).components(separatedBy: "/"))
     }
     
     private var domain: Domain {
