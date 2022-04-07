@@ -11,7 +11,9 @@ extension String {
         schemeless
             .dropFirst(_domain.prefixLenght)
             .components(separatedBy: "/")
-            .prefix(2)
+            .filter {
+                !$0.contains("@")
+            }
             .joined(separator: "/")
     }
     

@@ -3,12 +3,16 @@ import XCTest
 
 final class StringTests: XCTestCase {
     func testComparable() {
-        XCTAssertEqual("www.ck/a", "www.avocado.www.ck/a/b".comparable)
+        XCTAssertEqual("www.ck/a/b", "www.avocado.www.ck/a/b".comparable)
         XCTAssertEqual("hello.com", "https://hello.com".comparable)
         XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".comparable)
         XCTAssertEqual("hello.com", "www.hello.com".comparable)
-        XCTAssertEqual("hello.com/a", "www.a.hello.com/a/v/sd/dsfsafd/daf".comparable)
+        XCTAssertEqual("hello.com/a/v/sd/dsfsafd/daf", "www.a.hello.com/a/v/sd/dsfsafd/daf".comparable)
         XCTAssertEqual("google.com/maps", "https://www.google.com/maps/@13.0080775,47.5045485,2z?ucbcb=1".comparable)
+        XCTAssertEqual("wikipedia.org/wiki/Alan_Moore", "https://en.wikipedia.org/wiki/Alan_Moore".comparable)
+        XCTAssertEqual("wikipedia.org/wiki/Alan_Moore", "https://en.wikipedia.org/wiki/Alan_Moore".comparable)
+        XCTAssertEqual("ecosia.org/search?method=index&q=trees", "www.ecosia.org/search?method=index&q=trees".comparable)
+        XCTAssertEqual("ecosia.org/search?q=trees", "ecosia.org/search?q=trees".comparable)
     }
     
     func testDomain() {
