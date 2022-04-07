@@ -3,12 +3,12 @@ import XCTest
 
 final class StringTests: XCTestCase {
     func testHistorical() {
-        XCTAssertEqual("www.ck/a", "www.avocado.www.ck/a/b".historical)
-        XCTAssertEqual("hello.com", "https://hello.com".historical)
-        XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".historical)
-        XCTAssertEqual("hello.com", "www.hello.com".historical)
-        XCTAssertEqual("hello.com/a/v/sd/dsfsafd", "www.a.hello.com/a/v/sd/dsfsafd/daf".historical)
-        XCTAssertEqual("google.com/maps", "https://www.google.com/maps/@13.0080775,47.5045485,2z?ucbcb=1".historical)
+        XCTAssertEqual("www.ck/a", "www.avocado.www.ck/a/b".comparable)
+        XCTAssertEqual("hello.com", "https://hello.com".comparable)
+        XCTAssertEqual("hello.com/a?ds=1", "http://a.hello.com/a?ds=1".comparable)
+        XCTAssertEqual("hello.com", "www.hello.com".comparable)
+        XCTAssertEqual("hello.com/a", "www.a.hello.com/a/v/sd/dsfsafd/daf".comparable)
+        XCTAssertEqual("google.com/maps", "https://www.google.com/maps/@13.0080775,47.5045485,2z?ucbcb=1".comparable)
     }
     
     func testDomainMinimal() {

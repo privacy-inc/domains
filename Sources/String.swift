@@ -13,10 +13,12 @@ extension String {
             .lowercased()
     }
     
-    public var historical: String {
-        {
-            $0.count > 2 ? $0.dropLast().joined(separator: "/") : $0.joined(separator: "/")
-        } (schemeless.dropFirst(domain.prefixLenght).components(separatedBy: "/"))
+    public var comparable: String {
+        schemeless
+            .dropFirst(domain.prefixLenght)
+            .components(separatedBy: "/")
+            .prefix(2)
+            .joined(separator: "/")
     }
     
     private var domain: Domain {
