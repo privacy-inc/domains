@@ -17,6 +17,11 @@ extension String {
             .joined(separator: "/")
     }
     
+    public var schemeless: String {
+        replacingOccurrences(of: "https://", with: "")
+            .replacingOccurrences(of: "http://", with: "")
+    }
+    
     private var _domain: Domain {
         schemeless
             .components(separatedBy: "/")
@@ -24,10 +29,5 @@ extension String {
             .components(separatedBy: ":")
             .first
             .map(Tld.domain(host:))!
-    }
-    
-    private var schemeless: String {
-        replacingOccurrences(of: "https://", with: "")
-            .replacingOccurrences(of: "http://", with: "")
     }
 }
