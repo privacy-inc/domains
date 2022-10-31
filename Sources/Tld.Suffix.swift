@@ -212,12 +212,14 @@ extension Tld {
             .deta : .end,
             .developer : .wildcard(.init([
 ])),
+            .easypanel : .end,
             .edgecompute : .end,
             .encr : .end,
             .fireweb : .end,
             .framer : .end,
             .hasura : .end,
             .loginline : .end,
+            .messerli : .end,
             .netlify : .end,
             .noop : .end,
             .northflank : .wildcard(.init([
@@ -271,6 +273,7 @@ extension Tld {
             .cloudns : .end]),
         .associates : .end,
         .at : .previous([
+            ._123webseite : .end,
             ._12hp : .end,
             ._2ix : .end,
             ._4lima : .end,
@@ -421,6 +424,7 @@ extension Tld {
         .bd : .wildcard(.init([
 ])),
         .be : .previous([
+            ._123website : .end,
             .ac : .end,
             .blogspot : .end,
             .interhostsolutions : .previous([
@@ -629,6 +633,7 @@ extension Tld {
             .cnt : .end,
             .com : .previous([
                 .blogspot : .end,
+                .simplesite : .end,
                 .virtualcloud : .previous([
                     .scale : .previous([
                         .users : .end])])]),
@@ -817,7 +822,6 @@ extension Tld {
             .gov : .end,
             .net : .end,
             .org : .end]),
-        .bugatti : .end,
         .build : .end,
         .builders : .previous([
             .cloudsite : .end]),
@@ -877,7 +881,6 @@ extension Tld {
         .cam : .end,
         .camera : .end,
         .camp : .end,
-        .cancerresearch : .end,
         .canon : .end,
         .capetown : .end,
         .capital : .end,
@@ -924,6 +927,7 @@ extension Tld {
         .cfd : .end,
         .cg : .end,
         .ch : .previous([
+            ._123website : .end,
             ._12hp : .end,
             ._2ix : .end,
             ._4lima : .end,
@@ -1028,6 +1032,36 @@ extension Tld {
                 .ca : .end,
                 .uk : .end,
                 .us : .end]),
+            .scw : .previous([
+                .baremetal : .previous([
+                    .fr_par_1 : .end,
+                    .fr_par_2 : .end,
+                    .nl_ams_1 : .end]),
+                .fr_par : .previous([
+                    .fnc : .previous([
+                        .functions : .end]),
+                    .k8s : .previous([
+                        .nodes : .end]),
+                    .s3 : .end,
+                    .s3_website : .end,
+                    .whm : .end]),
+                .instances : .previous([
+                    .priv : .end,
+                    .pub : .end]),
+                .k8s : .end,
+                .nl_ams : .previous([
+                    .k8s : .previous([
+                        .nodes : .end]),
+                    .s3 : .end,
+                    .s3_website : .end,
+                    .whm : .end]),
+                .pl_waw : .previous([
+                    .k8s : .previous([
+                        .nodes : .end]),
+                    .s3 : .end,
+                    .s3_website : .end]),
+                .scalebook : .end,
+                .smartlabeling : .end]),
             .sensiosite : .wildcard(.init([
 ])),
             .statics : .wildcard(.init([
@@ -1042,8 +1076,7 @@ extension Tld {
         .club : .previous([
             .barsy : .end,
             .cloudns : .end,
-            .jele : .end,
-            .pony : .end]),
+            .jele : .end]),
         .clubmed : .end,
         .cm : .previous([
             .co : .end,
@@ -1115,6 +1148,8 @@ extension Tld {
                 .blogspot : .end]),
             .crd : .end,
             .edu : .end,
+            .firewalledreplit : .previous([
+                .id : .end]),
             .firm : .end,
             .gov : .end,
             .info : .end,
@@ -1157,26 +1192,56 @@ extension Tld {
             .aivencloud : .end,
             .alpha_myqnapcloud : .end,
             .amazonaws : .previous([
+                .af_south_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
+                .ap_east_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
                 .ap_northeast_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .ap_northeast_2 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
                     .s3_website : .end]),
+                .ap_northeast_3 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
                 .ap_south_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
                     .s3_website : .end]),
                 .ap_southeast_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .ap_southeast_2 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .ca_central_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
@@ -1188,23 +1253,47 @@ extension Tld {
                 .elb : .wildcard(.init([
 ])),
                 .eu_central_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
                     .s3_website : .end]),
+                .eu_north_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
+                .eu_south_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
                 .eu_west_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .eu_west_2 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
                     .s3_website : .end]),
                 .eu_west_3 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
                     .s3_website : .end]),
+                .me_south_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
                 .s3 : .end,
                 .s3_ap_northeast_1 : .end,
                 .s3_ap_northeast_2 : .end,
@@ -1232,16 +1321,33 @@ extension Tld {
                 .s3_website_us_west_1 : .end,
                 .s3_website_us_west_2 : .end,
                 .sa_east_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .us_east_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end])]),
                 .us_east_2 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end]),
                     .dualstack : .previous([
                         .s3 : .end]),
                     .s3 : .end,
-                    .s3_website : .end])]),
+                    .s3_website : .end]),
+                .us_west_1 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])]),
+                .us_west_2 : .previous([
+                    .cloud9 : .previous([
+                        .vfs : .end,
+                        .webview_assets : .end])])]),
             .amscompute : .end,
             .appchizi : .end,
             .applinzi : .end,
@@ -1278,6 +1384,13 @@ extension Tld {
             .cloudcontrolled : .end,
             .cn : .end,
             .co : .end,
+            .code : .previous([
+                .builder : .wildcard(.init([
+])),
+                .dev_builder : .wildcard(.init([
+])),
+                .stg_builder : .wildcard(.init([
+]))]),
             .codespot : .end,
             .customer_oci : .previous([
                 .oci : .wildcard(.init([
@@ -1656,6 +1769,7 @@ extension Tld {
             .shopitsite : .end,
             .siiites : .end,
             .simple_url : .end,
+            .simplesite : .end,
             .sinaapp : .end,
             .skygearapp : .end,
             .smushcdn : .end,
@@ -1663,6 +1777,7 @@ extension Tld {
             .stackhero_network : .end,
             .stdlib : .previous([
                 .api : .end]),
+            .streamlitapp : .end,
             .stufftoread : .end,
             .tb_hosting : .previous([
                 .site : .end]),
@@ -1815,6 +1930,7 @@ extension Tld {
         .dclk : .end,
         .dds : .end,
         .de : .previous([
+            ._123webseite : .end,
             ._12hp : .end,
             ._2ix : .end,
             ._4lima : .end,
@@ -1859,6 +1975,7 @@ extension Tld {
             .in_dsl : .end,
             .in_vpn : .end,
             .internet_dns : .end,
+            .iservschule : .end,
             .isteingeek : .end,
             .istmein : .end,
             .keymachine : .end,
@@ -1876,6 +1993,7 @@ extension Tld {
             .my_wan : .end,
             .myhome_server : .end,
             .myspreadshop : .end,
+            .schulplattform : .end,
             .schulserver : .end,
             .spdns : .end,
             .speedpartner : .previous([
@@ -1950,6 +2068,7 @@ extension Tld {
         .diy : .end,
         .dj : .end,
         .dk : .previous([
+            ._123hjemmeside : .end,
             .biz : .end,
             .blogspot : .end,
             .co : .end,
@@ -2063,6 +2182,7 @@ extension Tld {
         .ericsson : .end,
         .erni : .end,
         .es : .previous([
+            ._123miweb : .end,
             .com : .previous([
                 .blogspot : .end]),
             .edu : .end,
@@ -2119,14 +2239,14 @@ extension Tld {
         .farm : .previous([
             .storj : .end]),
         .farmers : .end,
-        .fashion : .previous([
-            .of : .end]),
+        .fashion : .end,
         .fast : .end,
         .fedex : .end,
         .feedback : .end,
         .ferrari : .end,
         .ferrero : .end,
         .fi : .previous([
+            ._123kotisivu : .end,
             .aland : .end,
             .blogspot : .end,
             .cloudplatform : .previous([
@@ -2178,7 +2298,9 @@ extension Tld {
             .edu : .end,
             .net : .end,
             .org : .end,
-            .radio : .end]),
+            .radio : .end,
+            .user : .wildcard(.init([
+]))]),
         .fo : .end,
         .foo : .end,
         .food : .end,
@@ -2191,6 +2313,7 @@ extension Tld {
         .foundation : .end,
         .fox : .end,
         .fr : .previous([
+            ._123siteweb : .end,
             .aeroport : .end,
             .asso : .end,
             .avocat : .end,
@@ -2201,6 +2324,7 @@ extension Tld {
             .chirurgiens_dentistes : .end,
             .chirurgiens_dentistes_en_france : .end,
             .com : .end,
+            .dedibox : .end,
             .en_root : .end,
             .experts_comptables : .end,
             .fbx_os : .end,
@@ -2346,7 +2470,8 @@ extension Tld {
             .edu : .end,
             .gov : .end,
             .net : .end,
-            .org : .end]),
+            .org : .end,
+            .simplesite : .end]),
         .grainger : .end,
         .graphics : .end,
         .gratis : .end,
@@ -2458,6 +2583,7 @@ extension Tld {
         .hospital : .end,
         .host : .previous([
             .cloudaccess : .end,
+            .easypanel : .end,
             .fastvps : .end,
             .freesite : .end,
             .half : .end,
@@ -2594,22 +2720,51 @@ extension Tld {
         .immo : .end,
         .immobilien : .end,
         ._in : .previous([
+            ._5g : .end,
+            ._6g : .end,
             .ac : .end,
+            .ai : .end,
+            .am : .end,
             .barsy : .end,
+            .bihar : .end,
+            .biz : .end,
             .blogspot : .end,
+            .business : .end,
+            .ca : .end,
             .cloudns : .end,
+            .cn : .end,
             .co : .end,
+            .com : .end,
+            .coop : .end,
+            .cs : .end,
+            .delhi : .end,
+            .dr : .end,
             .edu : .end,
+            .er : .end,
             .firm : .end,
             .gen : .end,
             .gov : .end,
+            .gujarat : .end,
             .ind : .end,
+            .info : .end,
+            .int : .end,
+            .internet : .end,
+            .io : .end,
+            .me : .end,
             .mil : .end,
             .net : .end,
             .nic : .end,
             .org : .end,
+            .pg : .end,
+            .post : .end,
+            .pro : .end,
             .res : .end,
             .supabase : .end,
+            .travel : .end,
+            .tv : .end,
+            .uk : .end,
+            .up : .end,
+            .us : .end,
             .web : .end]),
         .inc : .end,
         .industries : .end,
@@ -2659,6 +2814,7 @@ extension Tld {
 ]))]),
             .barsy : .end,
             .basicserver : .end,
+            .beagleboard : .end,
             .beebyte : .previous([
                 .paas : .end]),
             .beebyteapp : .previous([
@@ -2701,6 +2857,8 @@ extension Tld {
             .nid : .end,
             .nodeart : .previous([
                 .stage : .end]),
+            .on_acorn : .wildcard(.init([
+])),
             .on_k3s : .wildcard(.init([
 ])),
             .on_rio : .wildcard(.init([
@@ -2782,6 +2940,7 @@ extension Tld {
         .ist : .end,
         .istanbul : .end,
         .it : .previous([
+            ._123homepage : .end,
             ._16_b : .end,
             ._32_b : .end,
             ._64_b : .end,
@@ -2935,8 +3094,10 @@ extension Tld {
             .gov : .end,
             .gr : .end,
             .grosseto : .end,
+            .ibxos : .end,
             .iglesias_carbonia : .end,
             .iglesiascarbonia : .end,
+            .iliadboxos : .end,
             .im : .end,
             .imperia : .end,
             ._is : .end,
@@ -4181,6 +4342,7 @@ extension Tld {
                 .yawata : .end]),
             .lg : .end,
             .littlestar : .end,
+            .lolipopmc : .end,
             .lolitapunk : .end,
             .lomo : .end,
             .lovepop : .end,
@@ -5382,9 +5544,7 @@ extension Tld {
         .loft : .end,
         .lol : .previous([
             .omg : .end]),
-        .london : .previous([
-            ._in : .end,
-            .of : .end]),
+        .london : .end,
         .lotte : .end,
         .lotto : .end,
         .love : .end,
@@ -5413,6 +5573,7 @@ extension Tld {
         .ltd : .end,
         .ltda : .end,
         .lu : .previous([
+            ._123website : .end,
             .blogspot : .end]),
         .lundbeck : .end,
         .luxe : .end,
@@ -5455,9 +5616,7 @@ extension Tld {
         .mango : .end,
         .map : .end,
         .market : .end,
-        .marketing : .previous([
-            .from : .end,
-            .with : .end]),
+        .marketing : .end,
         .markets : .end,
         .marriott : .end,
         .marshalls : .end,
@@ -5522,14 +5681,13 @@ extension Tld {
             .wedeploy : .end,
             .yombo : .end]),
         .med : .end,
-        .media : .end,
+        .media : .previous([
+            .framer : .end]),
         .meet : .end,
         .melbourne : .end,
         .meme : .end,
         .memorial : .end,
-        .men : .previous([
-            ._for : .end,
-            .repair : .end]),
+        .men : .end,
         .menu : .previous([
             .barsy : .end]),
         .merckmsd : .end,
@@ -5591,9 +5749,7 @@ extension Tld {
         .moda : .end,
         .moe : .end,
         .moi : .end,
-        .mom : .previous([
-            .and : .end,
-            ._for : .end]),
+        .mom : .end,
         .monash : .end,
         .money : .end,
         .monster : .end,
@@ -6280,6 +6436,8 @@ extension Tld {
                     .cdn : .end])]),
             .azure_mobile : .end,
             .azurestaticapps : .previous([
+                ._1 : .end,
+                ._2 : .end,
                 .centralus : .end,
                 .eastasia : .end,
                 .eastus2 : .end,
@@ -6537,16 +6695,19 @@ extension Tld {
         .nissan : .end,
         .nissay : .end,
         .nl : .previous([
+            ._123website : .end,
             .blogspot : .end,
             .cistron : .end,
             .co : .end,
             .demon : .end,
+            .gov : .end,
             .hosting_cluster : .end,
             .khplay : .end,
             .myspreadshop : .end,
             .transurl : .wildcard(.init([
 ]))]),
         .no : .previous([
+            ._123hjemmeside : .end,
             .aa : .previous([
                 .gs : .end]),
             .aarborte : .end,
@@ -7377,12 +7538,10 @@ extension Tld {
             .pro : .end]),
         .omega : .end,
         .one : .previous([
-            ._for : .end,
             .homelink : .end,
             .onred : .previous([
                 .staging : .end]),
-            .service : .end,
-            .under : .end]),
+            .service : .end]),
         .ong : .end,
         .onion : .end,
         .onl : .end,
@@ -7650,7 +7809,8 @@ extension Tld {
         .phone : .end,
         .photo : .end,
         .photography : .end,
-        .photos : .end,
+        .photos : .previous([
+            .framer : .end]),
         .physio : .end,
         .pics : .end,
         .pictet : .end,
@@ -7856,6 +8016,7 @@ extension Tld {
             .sex : .end,
             .shop : .end,
             .shoparena : .end,
+            .simplesite : .end,
             .sklep : .end,
             .skoczow : .end,
             .slask : .end,
@@ -7910,6 +8071,7 @@ extension Tld {
         .plumbing : .end,
         .plus : .end,
         .pm : .previous([
+            .name : .end,
             .own : .end]),
         .pn : .previous([
             .co : .end,
@@ -7977,6 +8139,7 @@ extension Tld {
             .plo : .end,
             .sec : .end]),
         .pt : .previous([
+            ._123paginaweb : .end,
             .blogspot : .end,
             .com : .end,
             .edu : .end,
@@ -8096,6 +8259,7 @@ extension Tld {
             .ua : .end]),
         .rsvp : .end,
         .ru : .previous([
+            ._123sait : .end,
             .ac : .end,
             .adygeya : .end,
             .bashkiria : .end,
@@ -8186,8 +8350,7 @@ extension Tld {
         .safe : .end,
         .safety : .end,
         .sakura : .end,
-        .sale : .previous([
-            ._for : .end]),
+        .sale : .end,
         .salon : .end,
         .samsclub : .end,
         .samsung : .end,
@@ -8237,6 +8400,7 @@ extension Tld {
             .org : .end,
             .tv : .end]),
         .se : .previous([
+            ._123minsida : .end,
             .a : .end,
             .ac : .end,
             .b : .end,
@@ -8575,7 +8739,8 @@ extension Tld {
         .temasek : .end,
         .tennis : .end,
         .teva : .end,
-        .tf : .end,
+        .tf : .previous([
+            .sch : .end]),
         .tg : .end,
         .th : .previous([
             .ac : .end,
@@ -9280,26 +9445,27 @@ extension Tld {
         .weatherchannel : .end,
         .webcam : .end,
         .weber : .end,
-        .website : .end,
+        .website : .previous([
+            .framer : .end]),
         .wedding : .end,
         .weibo : .end,
         .weir : .end,
-        .wf : .end,
+        .wf : .previous([
+            .biz : .end,
+            .sch : .end]),
         .whoswho : .end,
         .wien : .end,
-        .wiki : .end,
+        .wiki : .previous([
+            .framer : .end]),
         .williamhill : .end,
-        .win : .previous([
-            .that : .end]),
+        .win : .end,
         .windows : .end,
         .wine : .end,
         .winners : .end,
         .wme : .end,
         .wolterskluwer : .end,
         .woodside : .end,
-        .work : .previous([
-            .from : .end,
-            .to : .end]),
+        .work : .end,
         .works : .end,
         .world : .end,
         .wow : .end,
@@ -9433,6 +9599,11 @@ extension Tld {
         .укр : .end,
         .қаз : .end,
         .հայ : .end,
+        .ישראל : .previous([
+            .אקדמיה : .end,
+            .ישוב : .end,
+            .ממשל : .end,
+            .צהל : .end]),
         .קום : .end,
         .ابوظبي : .end,
         .اتصالات : .end,
