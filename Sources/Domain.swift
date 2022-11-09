@@ -12,7 +12,7 @@ public struct Domain {
             .joined(separator: "."))
     }
     
-    var prefixLenght: Int {
+    var prefixLength: Int {
         prefix
             .map {
                 $0.count + 1

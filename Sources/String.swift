@@ -9,7 +9,7 @@ extension String {
     
     public var comparable: String {
         schemeless
-            .dropFirst(_domain.prefixLenght)
+            .dropFirst(_domain.prefixLength)
             .components(separatedBy: "/")
             .filter {
                 !$0.contains("@")
