@@ -3,7 +3,7 @@ import Foundation
 extension String {
     public var domain: String {
         _domain
-            .minimal
+            .complete
             .lowercased()
     }
     

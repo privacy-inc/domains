@@ -5,6 +5,16 @@ public struct Domain {
     public let prefix: [String]
     public let suffix: [String]
     
+    public var complete: String {
+        let prefixes = prefix.filter { $0.localizedCaseInsensitiveCompare("www") != .orderedSame }
+        
+        if prefixes.isEmpty {
+            return minimal
+        } else {
+            return prefixes.joined(separator: ".") + "." + minimal
+        }
+    }
+    
     public var minimal: String {
         name + (suffix.isEmpty
         ? ""

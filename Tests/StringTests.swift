@@ -16,10 +16,10 @@ final class StringTests: XCTestCase {
     }
     
     func testDomain() {
-        XCTAssertEqual("www.ck", "www.avocado.www.ck/hello".domain)
+        XCTAssertEqual("avocado.www.ck", "www.avocado.www.ck/hello".domain)
         XCTAssertEqual("hello.com", "http://hello.com/a/b/c".domain)
         XCTAssertEqual("hello.com", "https://hello.com".domain)
-        XCTAssertEqual("hello.com", "a.hello.com/a?var=3231123".domain)
+        XCTAssertEqual("a.hello.com", "a.hello.com/a?var=3231123".domain)
         XCTAssertEqual("twitter.com", "twitter.com/_vaux".domain)
         XCTAssertEqual("", "https://".domain)
         XCTAssertEqual("", "".domain)
@@ -30,8 +30,8 @@ final class StringTests: XCTestCase {
         XCTAssertEqual("hello.com", "www.hello.com/lol".domain)
         XCTAssertEqual("hello.com", "www.hello.com:8080".domain)
         XCTAssertEqual("hello.com", "www.hello.com:8080/lol".domain)
-        XCTAssertEqual("world.com", "www.hello.world.com/lol".domain)
-        XCTAssertEqual("world.com", "https://hello.world.com/lol".domain)
+        XCTAssertEqual("hello.world.com", "www.hello.world.com/lol".domain)
+        XCTAssertEqual("hello.world.com", "https://hello.world.com/lol".domain)
         XCTAssertEqual("bbc.co.uk", "https://bbc.co.uk".domain)
         XCTAssertEqual("privacy-inc.github.io", "https://privacy-inc.github.io/about".domain)
     }
