@@ -1,15 +1,12 @@
 import Foundation
 
 extension String {
-    public var domain: String {
-        _domain
-            .complete
-            .lowercased()
-    }
+    public var domainComplete: String { domain.complete }
+    public var domainMinimal: String { domain.minimal }
     
-    public var comparable: String {
+    public var domainComparable: String {
         schemeless
-            .dropFirst(_domain.prefixLength)
+            .dropFirst(domain.prefixLength)
             .components(separatedBy: "/")
             .filter {
                 !$0.contains("@")
@@ -18,11 +15,12 @@ extension String {
     }
     
     public var schemeless: String {
-        replacingOccurrences(of: "https://", with: "")
+        lowercased()
+            .replacingOccurrences(of: "https://", with: "")
             .replacingOccurrences(of: "http://", with: "")
     }
     
-    private var _domain: Domain {
+    private var domain: Domain {
         schemeless
             .components(separatedBy: "/")
             .first!
