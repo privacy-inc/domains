@@ -6,7 +6,7 @@ public struct Domain {
     public let suffix: [String]
     
     public var complete: String {
-        let prefixes = prefix.filter { $0.localizedCaseInsensitiveCompare("www") != .orderedSame }
+        let prefixes = prefix.filter { $0 != Tld.www.rawValue }
         
         if prefixes.isEmpty {
             return minimal
