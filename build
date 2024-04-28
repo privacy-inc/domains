@@ -1,0 +1,1 @@
+cat Tests/Parser.swift Tests/main.swift | swift -
