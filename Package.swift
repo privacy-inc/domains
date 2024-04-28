@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "Domains",
+            type: .static,
             targets: ["Domains"]),
     ],
     targets: [
